@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++",
+            "preLaunchTask": "Build with g++",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/program.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "integratedTerminal",
+        }
+    ]
+}
