@@ -32,25 +32,31 @@ int main(){
 ptr zauzima 8
 142-145 pointer na objekt, pointer na vtable, pointer na vtable[0], pointer na objekt
 1. poc 138-141, pb 132-137
+call _Znwy je poziv operatora new
 rsp - vrh stoga, rbp - dno stoga
 
-2. PlainOldClass se stvara na stogu, a CoolClass se stvara na heapu(pomoću operatora new)
+2. PlainOldClass se stvara na stogu, tijekom prevođenja, a CoolClass se stvara na heapu(pomoću operatora new), tijekom izvođenja
 
-3. Ne postoji takav poziv
+3. Ne postoji takav poziv, nema virtualnu tablicu nista ne inicijalizira
 
 4. U konstruktoru od CoolClass(94) prvo se poziva konstruktor od Base(73), 
 postavi se njegova vtablica(81),
 zatim se postavi vtablica od CoolClass(107), u rax se spremi pointer na vtable
 
-5. Stvaranjem objekta s operatorom new stvaramo objekt na heapu pomocu konstruktora
-te se definira i inicijalizira virtualna tablica funkcija. 
-Kad pozovemo metodu pb->set() (odnosi se na CoolClass)
-već imamo inicijaliziranu funkciju i trebamo je samo pozvat. 
-Stvaranjem objekta na stogu ovo se NE izvodi, nego
-se prilikom poziva funckije poc.set() (PlainOldClass) tek definira funkcija. 
-Stoga poziv pomoću -> zahtjeva manje instrukcija
-jer je funkcija već definirana i inicijalizirana
-za prvi poziv ne treba kod s instrukcijom call
+5. 
+poc.set 
+1. stavlja se 42 na stoga i varijabla poc na stog
+2. poziva se funkcija s fiksne memorijeske lokacije bez dinamičkog polimorfizma
+
+pb->set
+1. pb se dereferencira dvaput da bi dobili pokazivač na dio memorije
+gdje je pohranjena virtualna tablica
+2. stavlja se 42 na stog i varijabla pb na stog
+3. poziva se funkcija iz virtualne tablice
+
+
+poc.set zahtjeva manje instrukcija jer nije potrebno dohvaćati pokazivač
+na virtualnu tablicu kao kod pb->set
 
 6. definicija  vtablice (159), inicijalizacija
 
