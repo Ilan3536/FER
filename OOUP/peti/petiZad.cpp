@@ -17,7 +17,7 @@ void manualCallOfVirtualfunction(B *d){
 
     size_t* vtable =  *((size_t**) d); 
 
-    int (*pfun1)(B*) = (int (*)(B*))  vtable[0];
+    int (*pfun1)(B*) = (int (*)(B*))  vtable[0];  // isto kao *(vtable + 0) dereferenciranje
     int (*pfun2)(B*, int) = (int (*)(B*, int)) vtable[1];
 
     printf("%d\n", pfun1(d));

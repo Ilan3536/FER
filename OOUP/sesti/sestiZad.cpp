@@ -32,10 +32,10 @@ int main(){
 }
 
 /*
-1. U mainu se konstuktor Derived()
+1. U mainu se poziva konstuktor Derived()
 2. Derived() poziva konstruktor Base()
 3. Base() postavlja svoju virtualnu tablicu i poziva metodu metoda()
-4. "Metoda kaze:" i poziva se virtualnaMetoda() od Base jer virtualna tablica od Derived jos nije inicijalizirana, samo je definirana
+4. printa se  "Metoda kaze:" i poziva se virtualnaMetoda() od Base jer virtualna tablica od Derived jos nije inicijalizirana, samo je definirana
 5. Vraćamo se u konstruktor Derived(), definira se njegova virtualna tablica
 6. Poziva se metoda() iz Base(), zatim virtualnaMetoda(), ali ovaj put iz Derived() jer je inicijalizirana virtualna tablica
 
