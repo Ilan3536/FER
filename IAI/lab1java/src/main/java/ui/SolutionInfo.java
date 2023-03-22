@@ -1,7 +1,6 @@
 package ui;
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SolutionInfo {
@@ -41,9 +40,6 @@ public class SolutionInfo {
 	private String toString(List<Node> path) {
 		String pathAsString="";
 		for (Node state : path) {
-//			if (state.state.contains(",")) {
-//				String stateName = state.state.substring(0, state.state.indexOf(","));
-//			} 
 			pathAsString += state.state + " => ";
 		}
 		if (pathAsString.length() < 4) return "";

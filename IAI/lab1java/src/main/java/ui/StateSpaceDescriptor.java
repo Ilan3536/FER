@@ -45,6 +45,16 @@ public class StateSpaceDescriptor {
 
 
 
+	public static StateSpaceDescriptor parseSSandH(String pathToSSDescriptor, String pathToHDescriptor) {
+		StateSpaceDescriptor descriptor =  parseSSDescriptor(pathToSSDescriptor);
+		Map<String, Double> heuristicDescriptor = parseHDescriptor(pathToHDescriptor);
+		
+		
+		descriptor.setHeuristicDescriptor(heuristicDescriptor);
+			
+		
+		return descriptor;
+	}
 
 	public static StateSpaceDescriptor parseSSDescriptor(String pathToDescriptor) {
 		
@@ -56,31 +66,31 @@ public class StateSpaceDescriptor {
 			Map<String, List<String>> successorFunction = new TreeMap<>();
 			
 			int i = 0;
-			while(allLines.get(i).startsWith("#")) {
-				i++;
-			}
+			skipCommentedLines(allLines, i);
+			
 			String initialState = allLines.get(i++);
 			
-			while(allLines.get(i).startsWith("#")) {
-				i++;
-			}
+			skipCommentedLines(allLines, i);
+			
 			List<String> goalStates = Arrays.asList(allLines.get(i++).split(" "));
 			
 			while ( i < allLines.size()) {
 				if (allLines.get(i).startsWith("#")) continue;
-				String[] succ = allLines.get(i++).split(": ");
-				String node = succ[0];
 				
-				List<String> nextNodes = new ArrayList<>();
-				if (succ.length==1) {
-					successorFunction.put(node, nextNodes);
-					continue;
-				}
+				String[] nodeAndSuccessors = allLines.get(i++).split(": ");
 				
-				nextNodes = Arrays.asList(succ[1].split(" "));
+				putOneEntryInSuccessorMap(nodeAndSuccessors, successorFunction);
 				
-				Collections.sort(nextNodes);
-				successorFunction.put(node, nextNodes);
+//				String node = succ[0];
+//				List<String> nextNodes = new ArrayList<>();
+//				if (succ.length==1) {
+//					successorFunction.put(node, nextNodes);
+//					continue;
+//				}
+//				
+//				nextNodes = Arrays.asList(succ[1].split(" "));
+//				Collections.sort(nextNodes);
+//				successorFunction.put(node, nextNodes);
 				
 			}
 			
@@ -96,17 +106,26 @@ public class StateSpaceDescriptor {
 	}
 
 
-	public static StateSpaceDescriptor parseSSandH(String pathToSSDescriptor, String pathToHDescriptor) {
-		StateSpaceDescriptor descriptor =  parseSSDescriptor(pathToSSDescriptor);
-		Map<String, Double> heuristicDescriptor = parseHDescriptor(pathToHDescriptor);
+	private static void putOneEntryInSuccessorMap(String[] nodeAndSuccessors, Map<String, List<String>> successorFunction) {
+		List<String> nextNodes = new ArrayList<>();
+		if (nodeAndSuccessors.length==1) {
+			successorFunction.put(nodeAndSuccessors[0], nextNodes);
+			return;
+		}
 		
-		
-		descriptor.setHeuristicDescriptor(heuristicDescriptor);
-			
-		
-		return descriptor;
+		nextNodes = Arrays.asList(nodeAndSuccessors[1].split(" "));
+		Collections.sort(nextNodes);
+		successorFunction.put(nodeAndSuccessors[0], nextNodes);		
 	}
 
+
+
+
+	private static void skipCommentedLines(List<String> allLines, int i) {
+		while(allLines.get(i).startsWith("#")) {
+			i++;
+		}		
+	}
 
 
 

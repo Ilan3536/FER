@@ -56,14 +56,14 @@ public class Solution {
 		
 		
 		if (optimistic) {
-			System.out.println("# HEURISTIC-OPTIMISTIC " + pathToHDescriptor);
 			optimistic = HeuristicsChecker.checkOptimistic(pathToSSDescriptor, pathToHDescriptor);
+			System.out.println("# HEURISTIC-OPTIMISTIC " + pathToHDescriptor);
 			System.out.println("[CONCLUSION]: Heuristic is " + (optimistic ? "" : "not") + " optimistic.");
 		}
 		
 		if (consistent) {
-			System.out.println("# HEURISTIC-CONSISTENT " + pathToHDescriptor);
 			consistent = HeuristicsChecker.checkConsistent(pathToSSDescriptor, pathToHDescriptor);
+			System.out.println("# HEURISTIC-CONSISTENT " + pathToHDescriptor);
 			System.out.println("[CONCLUSION]: Heuristic is " + (consistent ? "" : "not") + " consistent.");
 		}
 		
