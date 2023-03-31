@@ -31,7 +31,7 @@ int main(){
 /*
 ptr zauzima 8
 142-145 pointer na objekt, pointer na vtable, pointer na vtable[0], pointer na objekt
-1. poc 138-141, pb 132-137
+1. poc 141, pb 142-145 je dinamički polimorfizam call r8 - 148 je poziv set
 call _Znwy je poziv operatora new
 rsp - vrh stoga, rbp - dno stoga
 

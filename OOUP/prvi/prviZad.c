@@ -78,7 +78,7 @@ void testAnimals(){
 int main(){ 
     testAnimals();
 
-    createNDogs(10);
+    //createNDogs(10);
     
     return 0;
 }

@@ -20,10 +20,12 @@ class TestClass{
 public:
   void set(int x){x_=x;};
   int get(){return x_;};
-  virtual int get3(){return x_;};
 
 private:
-  double x_;
+  int x_;
+  int y; 
+  int z;
+  
   
 };
 

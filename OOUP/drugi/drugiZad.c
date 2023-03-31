@@ -14,14 +14,12 @@ struct Unary_Function {
 
 struct Square {
     struct Unary_Function baseClass;
-    PTRFUN* pfun;
 };
 
 struct Linear {
     struct Unary_Function baseClass;
     double a;
     double b;
-    PTRFUN* pfun;
 };
 
 
@@ -39,7 +37,7 @@ double value_at(struct Unary_Function* unary, double x){
 double negative_value_at(struct Unary_Function* unary, double x){
     return -unary->pfun[0](unary, x);
 }
-PTRFUN UnaryFunctionTable[2];
+PTRFUN UnaryFunctionTable[2] ={NULL, negative_value_at};
 PTRFUN LinearTable[2]={value_atLinear, negative_value_at};
 PTRFUN SquareTable[2]={value_atSquare, negative_value_at};
 
