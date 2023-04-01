@@ -27,8 +27,8 @@ public class Clause {
     
 	
 	@Override
-	public boolean equals(Object o) {
-		Clause second = (Clause) o;
+	public boolean equals(Object other) {
+		Clause second = (Clause) other;
 		return this.clauses.equals(second.clauses);
 	}
 	@Override
@@ -36,10 +36,20 @@ public class Clause {
 		String output="\n"+number + ". ";
 		
 		for (var clause : clauses) {
-			output+= clause+" V ";
+			output+= clause+" v ";
 		}
 		output = output.substring(0, output.length()-3);
 		return output;
+	}
+	
+	public Clause isSubsumedBy(Clause clause) {
+		if (clause.clauses.containsAll(this.clauses)){
+			return clause;
+		} else if (this.clauses.containsAll(clause.clauses)){
+			return this;
+		}
+		
+		return null;
 	}
 	
 	

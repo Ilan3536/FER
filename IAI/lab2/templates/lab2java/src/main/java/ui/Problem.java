@@ -40,13 +40,13 @@ public class Problem {
 						literal = "~" + literal;
 					}
 					Set<String> clauseLiterals = new HashSet<>();
-					clauseLiterals.add(literal);
+					clauseLiterals.add(literal.toLowerCase());
 					Clause clause = new Clause(clauseLiterals, i);
 					clauses.add(clause);
 					break;
 				}
 				
-				String[] literals = allLines.get(i++).split(" V ");
+				String[] literals = allLines.get(i++).toLowerCase().split(" v ");
 				Set<String> clauseLiterals = new HashSet<>();
 				
 				clauseLiterals = Arrays.stream(literals).collect(Collectors.toSet());
