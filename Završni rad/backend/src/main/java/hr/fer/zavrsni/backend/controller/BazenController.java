@@ -23,6 +23,11 @@ public class BazenController {
 	
 	
 	@GetMapping
+	public ResponseEntity<List<Object[]>> getPools() {
+		return ResponseEntity.ok(this.bazenRepository.findPools());
+	}
+	
+	@GetMapping("/all")
 	public ResponseEntity<List<Bazen>> getAllBazeni() {
 		return ResponseEntity.ok(this.bazenRepository.findAll());
 	}

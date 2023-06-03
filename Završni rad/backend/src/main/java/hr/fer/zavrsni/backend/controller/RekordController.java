@@ -20,9 +20,16 @@ public class RekordController {
     }
 
     @GetMapping
+    public List<Object[]> getAllSvjetskiRekordi() {
+    	List<Object[]> obj = rekordRepository.findRekordi();
+    	return rekordRepository.findRekordi();
+    }
+    
+    @GetMapping("/wc")
     public List<Rekord> getAllRekordi() {
         return rekordRepository.findAll();
     }
+    
 
     @GetMapping("/{id}")
     public Rekord getRekordById(@PathVariable Long id) {

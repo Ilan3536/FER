@@ -40,22 +40,23 @@ public class Rezultat implements Serializable {
     @Column(name = "datum")
     private Date datum;
 
-    @Column(name = "idosoba")
-    private Long idosoba;
+    @ManyToOne
+    @JoinColumn(name = "idosoba", referencedColumnName = "idosoba")
+    private Osoba osoba;
 
     // Constructors
 
     public Rezultat() {
     }
 
-    public Rezultat(Long idrezultat, Disciplina disciplina, Natjecanje natjecanje, Time vrijeme, Integer bodovi, Date datum, Long idosoba) {
+    public Rezultat(Long idrezultat, Disciplina disciplina, Natjecanje natjecanje, Time vrijeme, Integer bodovi, Date datum, Osoba osoba) {
         this.idrezultat = idrezultat;
         this.disciplina = disciplina;
         this.natjecanje = natjecanje;
         this.vrijeme = vrijeme;
         this.bodovi = bodovi;
         this.datum = datum;
-        this.idosoba = idosoba;
+        this.osoba = osoba;
     }
 
     // ...
