@@ -4,6 +4,8 @@ import WorldRecords from '../views/WorldRecords.vue'
 import HomePage from '../views/HomePage.vue'
 import QualifiedAthletes from '../views/QualifiedAthletes.vue'
 import Pools from '../views/Pools.vue'
+import Competitions from '../views/Competitions'
+import CompetitionPage from '../views/CompetitionPage'
 
 const routes = [
   {
@@ -30,6 +32,16 @@ const routes = [
     path: '/pools',
     name: 'Pools',
     component: Pools
+  },
+  {
+    path: '/competitions',
+    name: 'Competitions',
+    component: Competitions
+  },
+  {
+    path: '/competitions/:id',
+    name: 'CompetitionPage',
+    component: CompetitionPage
   },
 ]
 

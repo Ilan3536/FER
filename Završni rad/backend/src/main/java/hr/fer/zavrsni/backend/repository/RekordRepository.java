@@ -12,7 +12,7 @@ import hr.fer.zavrsni.backend.model.Rekord;
 @Repository
 public interface RekordRepository extends JpaRepository<Rekord, Long> {
 	
-	@Query("SELECT o.imeosoba, o.prezimeosoba, d.nazivdisciplina, d.spol, r.vrijeme, n.nazivnatjecanje " +
+	@Query("SELECT o.imeosoba, o.prezimeosoba, d.nazivdisciplina, d.spol, to_char(r.vrijeme, 'HH24:MI:SS.MS') AS vrijeme, n.nazivnatjecanje " +
 		       "FROM Disciplina d " +
 		       "INNER JOIN Rezultat r ON d.iddisciplina = r.disciplina.iddisciplina " +
 		       "INNER JOIN Osoba o ON r.osoba.idosoba = o.idosoba " +

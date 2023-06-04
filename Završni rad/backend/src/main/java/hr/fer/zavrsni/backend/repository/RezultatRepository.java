@@ -21,9 +21,12 @@ public interface RezultatRepository extends JpaRepository<Rezultat, Long> {
 		       "GROUP BY o.idosoba, o.imeosoba, o.prezimeosoba " +
 		       "ORDER BY o.idosoba")
 	List<Object[]> findKvalificirani();
-		
-		
-	List<Rezultat> findByNatjecanjeIdnatjecanjeAndDisciplinaIddisciplina(Long idnatjecanje, Long iddisciplina);
+
+
+	List<Rezultat> findByNatjecanjeIdnatjecanje(Long id);
+
+	List<Rezultat> findByNatjecanjeIdnatjecanjeAndDisciplinaIddisciplina(Long idn, Long idd);
+
 
 
 }

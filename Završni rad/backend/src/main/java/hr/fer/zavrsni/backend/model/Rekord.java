@@ -1,5 +1,7 @@
 package hr.fer.zavrsni.backend.model;
 
+import java.sql.Timestamp;
+
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -18,13 +20,13 @@ public class Rekord {
     private Disciplina disciplina;
 
     @Column(name = "vrijeme")
-    private String vrijeme;
+    private Timestamp vrijeme;
 
 
     public Rekord() {
     }
 
-    public Rekord(Long idrekord, Disciplina disciplina, String vrijeme) {
+    public Rekord(Long idrekord, Disciplina disciplina, Timestamp vrijeme) {
         this.idrekord = idrekord;
         this.disciplina = disciplina;
         this.vrijeme = vrijeme;

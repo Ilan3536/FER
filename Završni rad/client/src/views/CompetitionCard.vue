@@ -1,29 +1,34 @@
+
+
+
 <template>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <v-card
         class="mx-auto"
         max-width="344"
     >
             <v-img
-                :src="getImagePath(pool.name)"
+                :src="getImagePath(competition.bazen.grad)"
                 height="200px"
                 cover
             ></v-img>
 
             <v-card-title class="multi-row-text">
-                {{ pool.id + ' - ' + pool.name }}
+                {{ competition.nazivnatjecanje }}
             </v-card-title>
 
             <v-card-subtitle>
-                {{ pool.country }}
+                {{ competition.bazen.drzava.nazivdrzava }}
             </v-card-subtitle>
 
             <v-card-actions>
                 <v-btn
                     color="orange-lighten-2"
                     variant="text"
-                    @click="show = !show"
+                    @click="this.$router.push(`/competitions/${competition.idnatjecanje}`)"
+                    class="material-symbols-outlined"
                 >
-                    Explore
+                description
             </v-btn>
 
             <v-spacer></v-spacer>
@@ -39,9 +44,9 @@
                 <v-divider></v-divider>
 
                 <v-card-text>
-                    {{ 'City: ' + pool.city }} <br>
-                    {{ 'Address: ' + pool.address }} <br>
-                    {{ 'Capacity: ' + pool.capacity }}
+                    {{ 'Pool: ' + competition.bazen.nazivbazen }} <br>
+                    {{ 'City: ' + competition.bazen.grad }} <br>
+                    {{ 'Date: ' + competition.datumod + ' - ' + competition.datumdo }}
                 </v-card-text>
             </div>
             </v-expand-transition>
@@ -49,9 +54,9 @@
 </template>
 <script>
 export default {
-    name: 'PoolCard',
+    name: 'CompetitionCard',
     props: {
-        pool: Object,
+        competition: Object,
     },
     data() {
         return {
@@ -60,7 +65,7 @@ export default {
     },
     methods: {
         getImagePath(image) {
-            return require('@/assets/pools/' + image + '.jpg');
+            return require('@/assets/cities/' + image + '.jpg');
         }
    }
     
@@ -69,6 +74,7 @@ export default {
 <style scoped>
 .multi-row-text {
   white-space: pre-wrap; 
-  word-break: break-word; 
+  word-break: break-word;
 }
+    
 </style>

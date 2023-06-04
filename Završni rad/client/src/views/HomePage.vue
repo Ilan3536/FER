@@ -53,7 +53,7 @@ export default {
                 {   src: 'natjecanja-image.jpg',
                     caption: 'Competitions', 
                     description: 'Immerse yourself in the world of swimming competitions and explore results from various events.',
-                    route: ''}, 
+                    route: '/competitions'}, 
                 {   src: 'pool.jpg',
                     caption: 'Qualified Athletes', 
                     description: 'Explore the accomplishments of swimmers who have met the qualification limits in their respective events.',

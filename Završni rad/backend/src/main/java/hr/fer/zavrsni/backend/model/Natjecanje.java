@@ -3,6 +3,7 @@ package hr.fer.zavrsni.backend.model;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 import jakarta.persistence.*;
 
@@ -30,16 +31,26 @@ public class Natjecanje implements Serializable{
 
     @Column(name = "vrstanatjecanje")
     private String vrstanatjecanje;
+    
+    @Column(name = "datumod")
+    private Date datumod;
 
+    @Column(name = "datumdo")
+    private Date datumdo;
+    
 
     public Natjecanje() {
     }
 
-    public Natjecanje(Long idnatjecanje, Bazen bazen, String nazivnatjecanje, String vrstanatjecanje) {
-        this.idnatjecanje = idnatjecanje;
-        this.bazen = bazen;
-        this.nazivnatjecanje = nazivnatjecanje;
-        this.vrstanatjecanje = vrstanatjecanje;
-    }
+	public Natjecanje(Long idnatjecanje, Bazen bazen, String nazivnatjecanje, String vrstanatjecanje, Date datumod,
+			Date datumdo) {
+		super();
+		this.idnatjecanje = idnatjecanje;
+		this.bazen = bazen;
+		this.nazivnatjecanje = nazivnatjecanje;
+		this.vrstanatjecanje = vrstanatjecanje;
+		this.datumod = datumod;
+		this.datumdo = datumdo;
+	}
 
 }

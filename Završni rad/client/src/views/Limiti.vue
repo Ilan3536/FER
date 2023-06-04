@@ -28,14 +28,6 @@
                         :subtitle=" 'time: ' + limit.vrijeme"
                     ></v-list-item>
                 </v-list>
-                <v-list  class="scroll-container">
-                    <v-list-item
-                        v-for="limit in limiti"
-                        :key="limit.idlimit"
-                        :title="limit.disciplina.nazivdisciplina + ' ' + limit.disciplina.spol"
-                        :subtitle=" 'time: ' + limit.vrijeme"
-                    ></v-list-item>
-                </v-list>
             </v-card>
           <v-divider></v-divider>
           <v-card-actions>
@@ -58,8 +50,8 @@ import {mapState, mapActions} from 'vuex'
 export default {
     data () {
         return {
-        dialogm1: '',
-        dialog: false,
+          dialogm1: '',
+          dialog: false,
         }
     },
     created(){

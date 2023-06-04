@@ -27,12 +27,21 @@ public class RezultatController {
     
     @GetMapping("/kvalificirani")
     public List<Object[]> getKvalificirani() {
-        return rezultatRepository.findKvalificirani();
+    	return rezultatRepository.findKvalificirani();
+    }
+    
+    @GetMapping("/natjecanje/{id}")
+    public ResponseEntity<List<Rezultat>> getRezultatiByNatjecanje(@PathVariable("id") Long id) {
+        List<Rezultat> rezultatList = rezultatRepository.findByNatjecanjeIdnatjecanje(id);
+        return ResponseEntity.ok(rezultatList);
     }
     
     @GetMapping("/natjecanje/{idn}/disciplina/{idd}")
-    public ResponseEntity<List<Rezultat>> getLimitById(@PathVariable Long idn, @PathVariable Long idd) {
+    public ResponseEntity<List<Rezultat>> getRezultatById(
+    		@PathVariable("idn") Long idn, 
+    		@PathVariable("idd") Long idd) {
         List<Rezultat> results = rezultatRepository.findByNatjecanjeIdnatjecanjeAndDisciplinaIddisciplina(idn, idd);
         return ResponseEntity.ok(results);
     }
+
 }

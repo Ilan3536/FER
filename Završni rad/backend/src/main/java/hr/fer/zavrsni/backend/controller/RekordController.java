@@ -21,7 +21,6 @@ public class RekordController {
 
     @GetMapping
     public List<Object[]> getAllSvjetskiRekordi() {
-    	List<Object[]> obj = rekordRepository.findRekordi();
     	return rekordRepository.findRekordi();
     }
     

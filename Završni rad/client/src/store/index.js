@@ -4,6 +4,7 @@ import rezultati from './modules/rezultati'
 import rekordi from './modules/rekordi'
 import limiti from './modules/limiti'
 import bazeni from './modules/bazeni'
+import natjecanja from './modules/natjecanja'
 
 const store = createStore({
     modules: {
@@ -12,6 +13,7 @@ const store = createStore({
         rekordi: rekordi,
         limiti: limiti,
         bazeni: bazeni,
+        natjecanja: natjecanja,
     }
 })
 
