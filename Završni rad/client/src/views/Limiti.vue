@@ -14,18 +14,19 @@
           </v-btn>
         </template>
         <v-card>
-          <v-card-title>Qualifiying time standards for National Championship 2023</v-card-title>
+          <v-card-title>Qualifiying time standards for National Championship 2023
+          </v-card-title>
           <v-divider></v-divider>
           <v-card
                 class="mx-auto list-container"
                 width="100%"
             >
-                <v-list  class="scroll-container">
+                <v-list class="scroll-container">
                     <v-list-item
                         v-for="limit in limiti"
                         :key="limit.idlimit"
                         :title="limit.disciplina.nazivdisciplina + ' ' + limit.disciplina.spol"
-                        :subtitle=" 'time: ' + limit.vrijeme"
+                        :subtitle=" 'time: ' + $formatTime(limit.vrijeme)"
                     ></v-list-item>
                 </v-list>
             </v-card>
@@ -61,7 +62,7 @@ export default {
         ...mapState('limiti', ['limiti']),
     },
     methods:{
-        ...mapActions('limiti', ['fetchLimiti']),
+        ...mapActions('limiti', ['fetchLimiti']),      
     }
 }
 </script>

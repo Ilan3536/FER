@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import hr.fer.zavrsni.backend.model.Natjecanje;
 import hr.fer.zavrsni.backend.model.Rezultat;
 import hr.fer.zavrsni.backend.repository.NatjecanjeRepository;
+import jakarta.persistence.OrderBy;
 
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class NatjecanjeController {
 
     @GetMapping
     public ResponseEntity<List<Natjecanje>> getAllNatjecanje() {
-        List<Natjecanje> natjecanjeList = natjecanjeRepository.findAll();
+        List<Natjecanje> natjecanjeList = natjecanjeRepository.findAllByOrderByDatumodDesc();
         return ResponseEntity.ok(natjecanjeList);
     }
     
@@ -35,6 +36,7 @@ public class NatjecanjeController {
         List<Natjecanje> results = natjecanjeRepository.findByIdnatjecanje(id);
         return ResponseEntity.ok(results);
     }
+    
     
     
     

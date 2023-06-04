@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.sql.Time;
+import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
@@ -32,7 +33,7 @@ public class Rezultat implements Serializable {
     private Natjecanje natjecanje;
 
     @Column(name = "vrijeme")
-    private Time vrijeme;
+    private Timestamp vrijeme;
 
     @Column(name = "bodovi")
     private Integer bodovi;
@@ -49,7 +50,7 @@ public class Rezultat implements Serializable {
     public Rezultat() {
     }
 
-    public Rezultat(Long idrezultat, Disciplina disciplina, Natjecanje natjecanje, Time vrijeme, Integer bodovi, Date datum, Osoba osoba) {
+    public Rezultat(Long idrezultat, Disciplina disciplina, Natjecanje natjecanje, Timestamp vrijeme, Integer bodovi, Date datum, Osoba osoba) {
         this.idrezultat = idrezultat;
         this.disciplina = disciplina;
         this.natjecanje = natjecanje;

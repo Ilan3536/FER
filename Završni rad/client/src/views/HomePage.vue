@@ -42,26 +42,31 @@ export default {
     data() {
         return {
             carouselItems: [
-                {   src: 'dressel.jpg', 
-                    caption: 'World Records', 
-                    description: 'Dive into a collection of stunning swimming pool images, showcasing the beauty and serenity of aquatic environments.',
-                    route: '/world-records'}, 
                 {   src: 'start-london-roar.png',
                     caption: 'Welcome to the World of Swimming', 
                     description: 'Dive into the captivating realm of swimming, where records are shattered and champions are born.',
-                    route: ''}, 
+                    route: ''
+                },
                 {   src: 'natjecanja-image.jpg',
                     caption: 'Competitions', 
                     description: 'Immerse yourself in the world of swimming competitions and explore results from various events.',
-                    route: '/competitions'}, 
+                    route: '/competitions'
+                }, 
                 {   src: 'pool.jpg',
                     caption: 'Qualified Athletes', 
                     description: 'Explore the accomplishments of swimmers who have met the qualification limits in their respective events.',
-                    route: '/qualified-athletes' }, 
+                    route: '/qualified-athletes' 
+                }, 
                 {   src: 'swim-pool.jpg',
                     caption: 'Pools', 
                     description: 'Discover the astonishing feats of swimmers who have achieved world records.',
-                    route: '/pools'},
+                    route: '/pools'
+                }, 
+                {   src: 'dressel.jpg', 
+                    caption: 'World Records', 
+                    description: 'Dive into a collection of stunning swimming pool images, showcasing the beauty and serenity of aquatic environments.',
+                    route: '/world-records'
+                }, 
             ],
         };
    },

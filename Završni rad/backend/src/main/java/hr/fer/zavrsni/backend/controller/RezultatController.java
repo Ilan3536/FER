@@ -40,8 +40,14 @@ public class RezultatController {
     public ResponseEntity<List<Rezultat>> getRezultatById(
     		@PathVariable("idn") Long idn, 
     		@PathVariable("idd") Long idd) {
-        List<Rezultat> results = rezultatRepository.findByNatjecanjeIdnatjecanjeAndDisciplinaIddisciplina(idn, idd);
+        List<Rezultat> results = rezultatRepository.findByNatjecanjeIdnatjecanjeAndDisciplinaIddisciplinaOrderByVrijemeAsc(idn, idd);
         return ResponseEntity.ok(results);
     }
 
+    
+    @GetMapping("/natjecanje/grouped/{id}")
+    public ResponseEntity<List<Rezultat>> getRezultatiByNatjecanjeGroupedByDisciplina(@PathVariable("id") Long id) {
+        List<Rezultat> rezultatList = rezultatRepository.findByIdnatjecanjeGroupByDisciplina(id);
+        return ResponseEntity.ok(rezultatList);
+    }
 }

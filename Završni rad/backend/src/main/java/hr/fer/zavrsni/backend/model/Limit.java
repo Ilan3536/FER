@@ -2,7 +2,7 @@ package hr.fer.zavrsni.backend.model;
 
 import java.io.Serializable;
 import java.sql.Time;
-
+import java.sql.Timestamp;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -29,13 +29,13 @@ public class Limit implements Serializable {
     private Disciplina disciplina;
     
     @Column(name = "vrijeme")
-    private Time vrijeme;
+    private Timestamp vrijeme;
 
 
     public Limit() {
     }
 
-    public Limit(Long idlimit, Disciplina disciplina, Time vrijeme) {
+    public Limit(Long idlimit, Disciplina disciplina, Timestamp vrijeme) {
         this.idlimit = idlimit;
         this.disciplina = disciplina;
         this.vrijeme = vrijeme;

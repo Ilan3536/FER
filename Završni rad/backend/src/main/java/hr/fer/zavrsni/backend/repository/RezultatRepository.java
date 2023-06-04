@@ -5,8 +5,10 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import hr.fer.zavrsni.backend.model.Natjecanje;
 import hr.fer.zavrsni.backend.model.Rezultat;
 
 
@@ -25,7 +27,10 @@ public interface RezultatRepository extends JpaRepository<Rezultat, Long> {
 
 	List<Rezultat> findByNatjecanjeIdnatjecanje(Long id);
 
-	List<Rezultat> findByNatjecanjeIdnatjecanjeAndDisciplinaIddisciplina(Long idn, Long idd);
+	List<Rezultat> findByNatjecanjeIdnatjecanjeAndDisciplinaIddisciplinaOrderByVrijemeAsc(Long idn, Long idd);
+	
+	@Query("SELECT DISTINCT disciplina FROM Rezultat r WHERE r.natjecanje.idnatjecanje = :idnatjecanje")
+    List<Rezultat> findByIdnatjecanjeGroupByDisciplina(@Param("idnatjecanje") Long idnatjecanje);
 
 
 

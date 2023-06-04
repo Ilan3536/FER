@@ -21,10 +21,10 @@
                 class="mx-auto list-container"
                 width="100%"
             >
-            <v-container class="container-center">
+            <v-container class="container-center scroll-container">
                 <EasyDataTable
                     :headers="headers"
-                    :items="eventResults"
+                    :items="eventResultsFormatted"
                     buttons-pagination
                 />
             </v-container>
@@ -45,6 +45,8 @@
 </template>
 <script>
 import { mapActions, mapState } from 'vuex';
+import { getCurrentInstance } from 'vue';
+
 
 export default {
     name: 'EventResults',
@@ -60,15 +62,30 @@ export default {
             dialogm1: '',
             dialog: false,
             headers: [
-                { text: 'Id', value: 'idrezultat', sortable: true },
+
+                { text: 'Place', value: 'place', sortable: true },
                 { text: 'Name', value: 'osoba.imeosoba', sortable: true },
                 { text: 'Surname', value: 'osoba.prezimeosoba', sortable: true },
                 { text: 'Time', value: 'vrijeme', sortable: true },
+                { text: 'Points', value: 'bodovi', sortable: true },
+                { text: 'Year born', value: 'year', sortable: true },
+                { text: 'Club', value: 'osoba.klub.nazivklub', sortable: true },
             ],
         }
     },
     computed: {
-        ...mapState('rezultati', ['eventResults'])
+        ...mapState('rezultati', ['eventResults']),
+        eventResultsFormatted(){
+            let i = 1
+            return this.eventResults.map(item => {
+                return  {
+                    ...item,
+                    vrijeme : this.formatTime(item.vrijeme),
+                    year: this.formatYear(item.osoba.datumrodjenja),
+                    place: i++,
+                }
+            })
+        }
     },
     created(){
         this.fetchResultsByCompetitionAndEvent( {
@@ -77,7 +94,15 @@ export default {
         })
     },
     methods: {
-        ...mapActions('rezultati', ['fetchResultsByCompetitionAndEvent'])
+        ...mapActions('rezultati', ['fetchResultsByCompetitionAndEvent']),
+        formatTime(time){
+            const $formatTime = getCurrentInstance().appContext.config.globalProperties.$formatTime
+            return $formatTime(time)
+        },
+        formatYear(time){
+            const $formatYear = getCurrentInstance().appContext.config.globalProperties.$formatYear
+            return $formatYear(time)
+        }
     }
     
 }
@@ -91,5 +116,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+.scroll-container {
+  overflow-y: auto;
+  max-height: 600px; 
 }
 </style>
