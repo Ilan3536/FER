@@ -56,22 +56,21 @@ export default {
     data() {
         return {
             idnatjecanje: null,
+            mappedDistinctEvents: [],
         }
     },
     created(){
         this.fetchCurrentCompetition(this.$route.params.id)
-        this.fetchResultsByCompetition(this.$route.params.id)
         this.fetchDistinctEvents(this.$route.params.id)
-        
     },
     computed: {
-        ...mapState('natjecanja', ['currentCompetition', 'distinctEvents']),
-        ...mapState('rezultati', ['competitionResults']),
+        ...mapState('natjecanja', ['currentCompetition']),
+        ...mapState('discipline', ['distinctEvents']),
         menEvents() {
-            return this.distinctEvents.filter(item => item.spol == 'M')
+            return this.mappedDistinctEvents.filter(item => item.spol == 'M')
         },
         womenEvents() {
-            return this.distinctEvents.filter(item => item.spol == 'F')
+            return this.mappedDistinctEvents.filter(item => item.spol == 'F')
         },
     },
     watch: {
@@ -80,11 +79,25 @@ export default {
             handler(newId){
                 this.idnatjecanje = newId
             }
+        },
+        distinctEvents : {
+            handler(distinctEvents) {
+                this.mapDistinctEvents(distinctEvents)
+            }
         }
     },
     methods: {
-        ...mapActions('natjecanja', ['fetchCurrentCompetition', 'fetchDistinctEvents']),
-        ...mapActions('rezultati', ['fetchResultsByCompetition']),  
+        ...mapActions('natjecanja', ['fetchCurrentCompetition']),
+        ...mapActions('discipline', ['fetchDistinctEvents']),  
+        mapDistinctEvents(distinctEvents){
+            this.mappedDistinctEvents = distinctEvents.map(item =>{
+                return {
+                    iddisciplina: item[0],
+                    nazivdisciplina: item[1],
+                    spol: item[2],
+                }
+            })
+        }
     }
 }
 </script>

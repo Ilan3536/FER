@@ -21,14 +21,25 @@
                 class="mx-auto list-container"
                 width="100%"
             >
-                <v-list class="scroll-container">
-                    <v-list-item
-                        v-for="limit in limiti"
-                        :key="limit.idlimit"
-                        :title="limit.disciplina.nazivdisciplina + ' ' + limit.disciplina.spol"
-                        :subtitle=" 'time: ' + $formatTime(limit.vrijeme)"
-                    ></v-list-item>
-                </v-list>
+
+              <div class="scroll-container">
+                <v-list class="scroll-list">
+                      <v-list-item
+                          v-for="limit in menEvents"
+                          :key="limit.idlimit"
+                          :title="limit.disciplina.nazivdisciplina + ' ' + limit.disciplina.spol"
+                          :subtitle=" 'time: ' + $formatTime(limit.vrijeme)"
+                      ></v-list-item>
+                  </v-list>
+                  <v-list class="scroll-list">
+                      <v-list-item
+                          v-for="limit in womenEvents"
+                          :key="limit.idlimit"
+                          :title="limit.disciplina.nazivdisciplina + ' ' + limit.disciplina.spol"
+                          :subtitle=" 'time: ' + $formatTime(limit.vrijeme)"
+                      ></v-list-item>
+                  </v-list>
+                </div>
             </v-card>
           <v-divider></v-divider>
           <v-card-actions>
@@ -60,21 +71,32 @@ export default {
     },
     computed: {
         ...mapState('limiti', ['limiti']),
+        menEvents() {
+            return this.limiti.filter(item => item.disciplina.spol == 'M')
+        },
+        womenEvents() {
+            return this.limiti.filter(item => item.disciplina.spol == 'F')
+        }, 
     },
     methods:{
-        ...mapActions('limiti', ['fetchLimiti']),      
+        ...mapActions('limiti', ['fetchLimiti']),   
+          
     }
 }
 </script>
 
-<style>
+<style scoped>
 .scroll-container {
-  overflow-y: auto;
+  overflow: auto;
   max-height: 600px; 
-}
-.list-container {
   display: flex;
   justify-content: space-between;
+}
+
+.scroll-list {
+  flex: 1;
+  width: 50%;
+  overflow: auto;
 }
 
 </style>

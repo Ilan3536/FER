@@ -32,8 +32,8 @@ public class DisciplinaController {
     }
     
     @GetMapping("/groupedByNatjecanje/{id}")
-    public ResponseEntity<List<Disciplina>> getRezultatiByNatjecanjeGroupedByDisciplina(@PathVariable("id") Long id) {
-        List<Disciplina> rezultatList = disciplinaRepository.findByIdnatjecanjeGroupByDisciplina(id);
+    public ResponseEntity<List<Object[]>> getRezultatiByNatjecanjeGroupedByDisciplina(@PathVariable("id") Long id) {
+        List<Object[]> rezultatList = disciplinaRepository.findByNatjecanjeIdnatjecanjeOrderByIddisciplina(id);
         return ResponseEntity.ok(rezultatList);
     }
 

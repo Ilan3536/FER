@@ -8,8 +8,14 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
+import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
+
+import javax.print.attribute.HashAttributeSet;
 
 
 public class RandomDataUtil {
@@ -23,46 +29,41 @@ public class RandomDataUtil {
 			"00:00:24.430", "00:00:49.450", "00:00:55.480", "00:01:50.340", "00:02:01.810",
 			"00:01:54.000", "00:02:06.120", "00:04:03.840", "00:04:25.870"
 	};
-	static String[] lowerBounds = populateBound(5);
-	static String[] upperBounds = populateBound(15);
+	static String[] lowerBounds = populateBound(3);
+	static String[] upperBounds = populateBound(9);
 	static int RESULTS = 20;
 	public static void main(String[] args) {
 
-		int iddisciplina = 3;
-		int indexrez = 142;
-		int indexoso = 150;
+		int iddisciplina = 1;
+		int indexrez = 1470;
 		for (; iddisciplina < 35; iddisciplina++) {
 			generateRezultati(iddisciplina, indexrez, worldRecords[iddisciplina]); //starting index for rezultat
-			generateOsobe( iddisciplina % 2 == 0 ? "F" : "M" , indexoso); //starting index for osoba
+			//generateOsobe( iddisciplina % 2 == 0 ? "F" : "M" , indexoso); //starting index for osoba
 			indexrez+=RESULTS;
-			indexoso+=RESULTS;
 		}
 		
 	}
 	
 	
 	public static void generateRezultati(int iddisciplina, int index, String rekord) {
-		String disciplina = ""+iddisciplina;
 		 String ouputfilePathRez = 
 				 "C:\\FER\\git_repo_FER\\FER\\Završni rad\\backend\\src\\main\\resources\\static\\randomRezultati.txt";
 	        int i = index; //starting index for rezultat
 	        String timeRange1 = lowerBounds[iddisciplina];
 	        String timeRange2 = upperBounds[iddisciplina];
+	        List<Integer> randomOsobe = new ArrayList<Integer>(generateDifferentRandomNumbers(RESULTS, 43, 789));
+	        
 	        try ( FileWriter writerRez = new FileWriter(ouputfilePathRez, true)) {
 	        	
-	        	//writerRez.write("INSERT INTO rezultat VALUES\n");
 	        	String rezultat = "";
-	        	for ( ; i < index+RESULTS; i++) {
+	        	for (i = 0; i < randomOsobe.size(); i++) {
 	        		System.out.println("time1: " + timeRange1 + " time2: " + timeRange2);
 	        		String time = generateRandomTime(timeRange1, timeRange2).toString();
-	        		rezultat = "(" + i + ", " + iddisciplina + ", 12, \'1970-01-01 " + time + 
+	        		rezultat = "(" + index++ + ", " + iddisciplina + ", 14, \'1970-01-01 " + time + 
 	        				"\', " + calculatePoints(rekord, time) + ", " +
-	        				"\'2022-02-24\'" + ", " + (i+8) + "),\n";
+	        				"\'2023-05-13\'" + ", " + randomOsobe.get(i) + "),\n";
 	        		
-//	        		if (i == index + RESULTS-1) {
-//	        			writerRez.write(rezultat.substring(0,rezultat.length()-2) + ";\n");
-//	        			continue;
-//	        		}
+
 	        		writerRez.write(rezultat);
 	        	}
 	        	
@@ -76,7 +77,7 @@ public class RandomDataUtil {
 	
 
 	public static void generateOsobe(String spol, int index) {
-		String indexSpol = index + spol;
+		
 		 String ouputfilePathRez = 
 				 "C:\\FER\\git_repo_FER\\FER\\Završni rad\\backend\\src\\main\\resources\\static\\randomOsobe.txt";
 	        int i = index; //starting index for
@@ -132,6 +133,16 @@ public class RandomDataUtil {
         long endMillis = end.toNanoOfDay() / 1_000_000; // Convert to milliseconds
         long randomMillis = ThreadLocalRandom.current().nextLong(startMillis, endMillis + 1);
         return LocalTime.ofNanoOfDay(randomMillis * 1_000_000); // Convert back to nanoseconds
+    }
+	
+	
+	public static Set<Integer> generateDifferentRandomNumbers(int count, int min, int max) {
+       Set<Integer> set = new HashSet<>();
+       
+       while (set.size() < count) {
+    	   set.add(generateRandomNumber(min, max));
+       }
+       return set;
     }
 	
 	public static int generateRandomNumber(int min, int max) {

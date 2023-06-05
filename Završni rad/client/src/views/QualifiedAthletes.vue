@@ -1,11 +1,10 @@
 <template>
-    <Layout title="Athletes qualified for National Championship">
+    <Layout title="Athletes qualified for National Championship 2023">
         <v-container class="container-center">
             <EasyDataTable
                 :headers="headers"
                 :items="mappedQualified"
                 buttons-pagination
-                rows-per-page=14
             />
         </v-container>
         <Limiti class="limiti-button">
@@ -31,6 +30,8 @@ export default {
                 { text: 'Id', value: 'id', sortable: true },
                 { text: 'Name', value: 'name', sortable: true },
                 { text: 'Surname', value: 'surname', sortable: true },
+                { text: 'Club', value: 'club', sortable: true, width: 160 },
+                { text: 'Events', value: 'events', width: 600 }
             ],
             mappedQualified:[]
         }
@@ -58,9 +59,11 @@ export default {
         mapQualified(qualified){
             this.mappedQualified = qualified.map(item => {
             return {
-                id: item[3],
+                id: item[0],
                 name: item[1],
                 surname: item[2],
+                club: item[3],
+                events: item[4],
             }
         })
         }
@@ -78,7 +81,7 @@ export default {
 }
 
 .limiti-button {
-    margin-top: 50px;
+    margin-top: 70px;
 }
     
 </style>

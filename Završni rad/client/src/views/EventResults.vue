@@ -15,7 +15,9 @@
           </v-btn>
         </template>
         <v-card>
-          <v-card-title class="centered-text"> {{ eventResults[0].disciplina.nazivdisciplina + ' ' + eventResults[0].disciplina.spol }}</v-card-title>
+          <v-card-title class="centered-text"> 
+            {{ eventResults[0].disciplina.nazivdisciplina + ' ' + eventResults[0].disciplina.spol }} 
+            </v-card-title>
           <v-divider></v-divider>
           <v-card
                 class="mx-auto list-container"

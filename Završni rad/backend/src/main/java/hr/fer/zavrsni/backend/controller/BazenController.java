@@ -21,13 +21,7 @@ public class BazenController {
 		this.bazenRepository = bazenRepository;
 	}
 	
-	
-	@GetMapping
-	public ResponseEntity<List<Object[]>> getPools() {
-		return ResponseEntity.ok(this.bazenRepository.findPools());
-	}
-	
-	@GetMapping("/all")
+	@GetMapping()
 	public ResponseEntity<List<Bazen>> getAllBazeni() {
 		return ResponseEntity.ok(this.bazenRepository.findAll());
 	}

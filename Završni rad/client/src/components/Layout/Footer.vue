@@ -14,13 +14,13 @@
     </div>
 
     <div class="pt-0">
-      Phasellus feugiat argitur.
+        Scientia inflate
     </div>
 
     <v-divider></v-divider>
 
     <div>
-      {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+      {{ new Date().getFullYear() }}<strong></strong>
     </div>
   </v-footer>
 </template>

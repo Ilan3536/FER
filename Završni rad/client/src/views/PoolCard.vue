@@ -4,17 +4,17 @@
         max-width="344"
     >
             <v-img
-                :src="getImagePath(pool.name)"
+                :src="getImagePath(pool.nazivbazen)"
                 height="200px"
                 cover
             ></v-img>
 
             <v-card-title class="multi-row-text">
-                {{ pool.id + ' - ' + pool.name }}
+                {{ pool.idbazen + ' - ' + pool.nazivbazen }}
             </v-card-title>
 
             <v-card-subtitle>
-                {{ pool.country }}
+                {{ pool.drzava.nazivdrzava }}
             </v-card-subtitle>
 
             <v-card-actions>
@@ -39,9 +39,9 @@
                 <v-divider></v-divider>
 
                 <v-card-text>
-                    {{ 'City: ' + pool.city }} <br>
-                    {{ 'Address: ' + pool.address }} <br>
-                    {{ 'Capacity: ' + pool.capacity }}
+                    {{ 'City: ' + pool.grad }} <br>
+                    {{ 'Address: ' + pool.adresa }} <br>
+                    {{ 'Capacity: ' + pool.kapacitet }}
                 </v-card-text>
             </div>
             </v-expand-transition>
@@ -69,6 +69,7 @@ export default {
 <style scoped>
 .multi-row-text {
   white-space: pre-wrap; 
-  word-break: break-word; 
+  word-break: break-word;
+  min-height: 4em;
 }
 </style>

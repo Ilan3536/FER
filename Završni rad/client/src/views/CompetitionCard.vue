@@ -75,6 +75,7 @@ export default {
 .multi-row-text {
   white-space: pre-wrap; 
   word-break: break-word;
+  min-height: 4em;
 }
     
 </style>

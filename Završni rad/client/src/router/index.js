@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Rezultati from '../views/Rezultati.vue'
 import WorldRecords from '../views/WorldRecords.vue'
 import HomePage from '../views/HomePage.vue'
 import QualifiedAthletes from '../views/QualifiedAthletes.vue'
@@ -12,11 +11,6 @@ const routes = [
     path: '',
     name: 'HomePage',
     component: HomePage
-  },
-  {
-    path: '/rezultati',
-    name: 'Rezultati',
-    component: Rezultati
   },
   {
     path: '/world-records',

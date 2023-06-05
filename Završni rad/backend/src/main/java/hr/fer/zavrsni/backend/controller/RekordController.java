@@ -24,23 +24,24 @@ public class RekordController {
     	return rekordRepository.findRekordi();
     }
     
-    @GetMapping("/wc")
-    public List<Rekord> getAllRekordi() {
-        return rekordRepository.findAll();
-    }
-    
 
     @GetMapping("/{id}")
     public Rekord getRekordById(@PathVariable Long id) {
         return rekordRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid Rekord ID: " + id));
     }
-
-    @PostMapping
-    public Rekord createRekord(@RequestBody Rekord rekord) {
-        return rekordRepository.save(rekord);
+    
+    @GetMapping("/disciplina/{idddisciplina}")
+    public Rekord getRekordByDisciplinaId(@PathVariable Long idddisciplina) {
+        return rekordRepository.findByDisciplinaIddisciplina(idddisciplina)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid Rekord ID: " + idddisciplina));
     }
 
+    @GetMapping("/wc")
+    public List<Rekord> getAllRekordi() {
+        return rekordRepository.findAll();
+    }
+    
     @PutMapping("/{id}")
     public Rekord updateRekord(@PathVariable Long id, @RequestBody Rekord updatedRekord) {
         Rekord rekord = rekordRepository.findById(id)
@@ -52,9 +53,5 @@ public class RekordController {
         return rekordRepository.save(rekord);
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteRekord(@PathVariable Long id) {
-        rekordRepository.deleteById(id);
-    }
 }
 

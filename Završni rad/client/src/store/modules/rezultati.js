@@ -1,18 +1,13 @@
 import axios from '@/util/axiosConfig'
 
 const state = {
-    allResults: [],
     qualified: [],
     currentCompetition: [],
     eventResults: [],
-    competitionResults: [],
 
 }
   
 const mutations = {
-    setallResults(state, allResults){
-        state.allResults = allResults
-    },
     setQualified(state, qualified){
         state.qualified = qualified
     },
@@ -22,14 +17,11 @@ const mutations = {
     setEventResults(state, eventResults){
         state.eventResults = eventResults
     },
-    setCompetitionResults(state, competitionResults){
-        state.competitionResults = competitionResults
-    }
 
 }
   
 const actions = {
-    fetchRezultati({ commit }){
+    /* fetchRezultati({ commit }){
         console.log('/api/rezultati')
         axios
         .get('/rezultati')
@@ -40,7 +32,7 @@ const actions = {
         .catch(error => {
             console.error(error)
         })
-    },
+    }, */
     fetchQualified({ commit }){
         console.log('/api/rezultati/kvalificirani')
         axios
@@ -53,7 +45,7 @@ const actions = {
             console.error(error)
         })
     },
-    fetchResultsByCompetition({ commit }, id){
+    /* fetchResultsByCompetition({ commit }, id){
         console.log(`/api/rezultati/natjecanje/${id}`)
         axios
         .get(`http://localhost:8080/rezultati/natjecanje/${id}`)
@@ -64,7 +56,7 @@ const actions = {
         .catch(error => {
             console.error(error)
         })
-    },
+    }, */
     fetchResultsByCompetitionAndEvent({ commit }, payload){
         const {idn, idd } = payload
         console.log(`/api/rezultati/natjecanje/${idn}/disciplina/${idd}`)

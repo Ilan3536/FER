@@ -23,4 +23,6 @@ public interface RekordRepository extends JpaRepository<Rekord, Long> {
 
 	
 	Optional<Rekord> findById(Long id);
+	
+	Optional<Rekord> findByDisciplinaIddisciplina(Long iddisciplina);
 }

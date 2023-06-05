@@ -30,11 +30,5 @@ public class LimitController {
     }
     
     
-    @GetMapping("/{id}")
-    public ResponseEntity<List<Limit>> getLimitById(@PathVariable Long id) {
-        List<Limit> limits = limitRepository.findByDisciplinaIddisciplina(id);
-        return ResponseEntity.ok(limits);
-    }
-    
 }
 

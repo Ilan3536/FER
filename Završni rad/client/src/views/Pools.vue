@@ -2,7 +2,7 @@
     <Layout title="Olympic swimming pools">
         <v-container>
             <v-row>
-                <v-col v-for="(pool, index) in mappedPools" :key="index" cols="12" sm="6" md="4" lg="3">  
+                <v-col v-for="(pool, index) in pools" :key="index" cols="12" sm="6" md="4" lg="3">  
                     <PoolCard
                     :pool="pool"
                     >
@@ -23,11 +23,7 @@ export default {
         Layout,
         PoolCard,
     },
-    data(){
-        return {
-            mappedPools:[],
-        }
-    },
+
     created(){
         this.fetchPools()
         
@@ -36,27 +32,9 @@ export default {
         ...mapState('bazeni', ['pools'])
         
     },
-    watch: {
-        pools: {
-            handler(pools) {
-                this.mapPools(pools)
-            },
-        },
-    },
+
     methods: {
         ...mapActions('bazeni', ['fetchPools']),
-        mapPools(pools){
-            this.mappedPools = pools.map(item => {
-            return {
-                id: item[0],
-                name: item[1],
-                capacity: item[2],
-                country: item[3],
-                city: item[4],
-                address: item[5],
-            }
-        })
-        }
     },
     
 };

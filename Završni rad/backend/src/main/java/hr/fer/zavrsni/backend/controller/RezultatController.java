@@ -4,6 +4,7 @@ import org.springframework.http.ResponseEntity;
 
 import org.springframework.web.bind.annotation.*;
 
+import hr.fer.zavrsni.backend.model.Disciplina;
 import hr.fer.zavrsni.backend.model.Rezultat;
 import hr.fer.zavrsni.backend.repository.RezultatRepository;
 
@@ -30,11 +31,6 @@ public class RezultatController {
     	return rezultatRepository.findKvalificirani();
     }
     
-    @GetMapping("/natjecanje/{id}")
-    public ResponseEntity<List<Rezultat>> getRezultatiByNatjecanje(@PathVariable("id") Long id) {
-        List<Rezultat> rezultatList = rezultatRepository.findByNatjecanjeIdnatjecanje(id);
-        return ResponseEntity.ok(rezultatList);
-    }
     
     @GetMapping("/natjecanje/{idn}/disciplina/{idd}")
     public ResponseEntity<List<Rezultat>> getRezultatById(
@@ -45,9 +41,11 @@ public class RezultatController {
     }
 
     
-    @GetMapping("/natjecanje/grouped/{id}")
-    public ResponseEntity<List<Rezultat>> getRezultatiByNatjecanjeGroupedByDisciplina(@PathVariable("id") Long id) {
-        List<Rezultat> rezultatList = rezultatRepository.findByIdnatjecanjeGroupByDisciplina(id);
-        return ResponseEntity.ok(rezultatList);
+    @GetMapping("/natjecanje/{id}")
+    public ResponseEntity<List<Rezultat>> getRezultatiByNatjecanje(@PathVariable("id") Long id) {
+    	List<Rezultat> rezultatList = rezultatRepository.findByNatjecanjeIdnatjecanjeOrderByDisciplinaIddisciplina(id);
+    	return ResponseEntity.ok(rezultatList);
     }
+    
+    
 }
