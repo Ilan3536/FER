@@ -58,20 +58,20 @@ export default {
     props: {
         idnatjecanje: Number,
         iddisciplina: Number,
+        vrstanatjecanje: String,
     },
     data(){
         return {
             dialogm1: '',
             dialog: false,
             headers: [
-
                 { text: 'Place', value: 'place', sortable: true },
                 { text: 'Name', value: 'osoba.imeosoba', sortable: true },
                 { text: 'Surname', value: 'osoba.prezimeosoba', sortable: true },
                 { text: 'Time', value: 'vrijeme', sortable: true },
                 { text: 'Points', value: 'bodovi', sortable: true },
-                { text: 'Year born', value: 'year', sortable: true },
-                { text: 'Club', value: 'osoba.klub.nazivklub', sortable: true },
+                { text: 'Year born', value: 'godina', sortable: true },
+                
             ],
         }
     },
@@ -83,7 +83,7 @@ export default {
                 return  {
                     ...item,
                     vrijeme : this.formatTime(item.vrijeme),
-                    year: this.formatYear(item.osoba.datumrodjenja),
+                    godina: this.formatYear(item.osoba.datumrodjenja),
                     place: i++,
                 }
             })
@@ -94,6 +94,8 @@ export default {
             idn: this.idnatjecanje, 
             idd: this.iddisciplina
         })
+        this.checkEventType()
+        
     },
     methods: {
         ...mapActions('rezultati', ['fetchResultsByCompetitionAndEvent']),
@@ -104,6 +106,13 @@ export default {
         formatYear(time){
             const $formatYear = getCurrentInstance().appContext.config.globalProperties.$formatYear
             return $formatYear(time)
+        },
+        checkEventType(){
+          if (this.vrstanatjecanje=='world championships' || this.vrstanatjecanje=='olmypic games' || this.vrstanatjecanje=='olympic trials'){
+            this.headers.push({ text: 'Country', value: 'osoba.drzava.nazivdrzava', sortable: true })
+          } else {
+            this.headers.push({ text: 'Club', value: 'osoba.klub.nazivklub', sortable: true })
+          }
         }
     }
     

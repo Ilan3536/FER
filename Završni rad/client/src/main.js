@@ -1,3 +1,4 @@
+import 'devextreme/dist/css/dx.light.css';
 import { createApp } from 'vue';
 import store from './store/index'
 import App from './App.vue';
@@ -17,6 +18,10 @@ import 'vuetify/dist/vuetify.css';
 //Vue data table
 import Vue3EasyDataTable from 'vue3-easy-data-table';
 import 'vue3-easy-data-table/dist/style.css';
+
+import 'vue-search-input/dist/styles.css'
+
+
 
 const vuetify = createVuetify({
     components,

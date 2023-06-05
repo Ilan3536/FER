@@ -9,12 +9,16 @@
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
+    "@vue/compat": "^3.3.4",
     "axios": "^1.4.0",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.6.2",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
+    "devextreme": "^22.2.4",
+    "devextreme-vue": "^22.2.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2",
+    "vue-search-input": "^1.1.11",
     "vue3-easy-data-table": "^1.5.42",
     "vuetify": "^3.3.2",
     "vuex": "^4.1.0"
@@ -25,6 +29,7 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "devextreme-themebuilder": "^22.2.4",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "http-proxy-middleware": "^2.0.6"

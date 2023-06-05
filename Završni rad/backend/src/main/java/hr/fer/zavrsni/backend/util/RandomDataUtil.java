@@ -35,10 +35,16 @@ public class RandomDataUtil {
 	public static void main(String[] args) {
 
 		int iddisciplina = 1;
-		int indexrez = 1470;
+		int indexrez = 1395;
+//		for (int i= 35; i < 600; i+=RESULTS) {
+//			generateOsobe( "M" , i); //starting index for osoba
+//		}
+//		for (int i= 600; i < 1001; i+=RESULTS) {
+//			generateOsobe( "F" , i);
+//		}
+
 		for (; iddisciplina < 35; iddisciplina++) {
 			generateRezultati(iddisciplina, indexrez, worldRecords[iddisciplina]); //starting index for rezultat
-			//generateOsobe( iddisciplina % 2 == 0 ? "F" : "M" , indexoso); //starting index for osoba
 			indexrez+=RESULTS;
 		}
 		
@@ -47,11 +53,13 @@ public class RandomDataUtil {
 	
 	public static void generateRezultati(int iddisciplina, int index, String rekord) {
 		 String ouputfilePathRez = 
-				 "C:\\FER\\git_repo_FER\\FER\\Završni rad\\backend\\src\\main\\resources\\static\\randomRezultati.txt";
+				 "C:\\FER\\git_repo_FER\\FER\\Završni rad\\backend\\src\\main\\resources\\static\\REZULTATI-SISAK.txt";
 	        int i = index; //starting index for rezultat
 	        String timeRange1 = lowerBounds[iddisciplina];
 	        String timeRange2 = upperBounds[iddisciplina];
-	        List<Integer> randomOsobe = new ArrayList<Integer>(generateDifferentRandomNumbers(RESULTS, 43, 789));
+	        List<Integer> randomOsobe =  iddisciplina % 2 != 0 ? 
+	        		new ArrayList<Integer>(generateDifferentRandomNumbers(RESULTS, 35, 614)) : 
+	        		new ArrayList<Integer>(generateDifferentRandomNumbers(RESULTS, 614, 1019));
 	        
 	        try ( FileWriter writerRez = new FileWriter(ouputfilePathRez, true)) {
 	        	
@@ -59,9 +67,9 @@ public class RandomDataUtil {
 	        	for (i = 0; i < randomOsobe.size(); i++) {
 	        		System.out.println("time1: " + timeRange1 + " time2: " + timeRange2);
 	        		String time = generateRandomTime(timeRange1, timeRange2).toString();
-	        		rezultat = "(" + index++ + ", " + iddisciplina + ", 14, \'1970-01-01 " + time + 
+	        		rezultat = "(" + index++ + ", " + iddisciplina + ", 12, \'1970-01-01 " + time + 
 	        				"\', " + calculatePoints(rekord, time) + ", " +
-	        				"\'2023-05-13\'" + ", " + randomOsobe.get(i) + "),\n";
+	        				"\'2023-03-18\'" + ", " + randomOsobe.get(i) + "),\n";
 	        		
 
 	        		writerRez.write(rezultat);
@@ -79,7 +87,7 @@ public class RandomDataUtil {
 	public static void generateOsobe(String spol, int index) {
 		
 		 String ouputfilePathRez = 
-				 "C:\\FER\\git_repo_FER\\FER\\Završni rad\\backend\\src\\main\\resources\\static\\randomOsobe.txt";
+				 "C:\\FER\\git_repo_FER\\FER\\Završni rad\\backend\\src\\main\\resources\\static\\OSOBE.txt";
 	        int i = index; //starting index for
 	        try ( FileWriter writerRez = new FileWriter(ouputfilePathRez, true)) {
 	        	

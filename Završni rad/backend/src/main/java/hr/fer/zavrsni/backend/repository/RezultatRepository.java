@@ -34,6 +34,16 @@ public interface RezultatRepository extends JpaRepository<Rezultat, Long> {
 	
 	List<Rezultat> findByNatjecanjeIdnatjecanjeAndDisciplinaIddisciplinaOrderByVrijemeAsc(Long idn, Long idd);
 	
+	
+	@Query("SELECT r.disciplina.iddisciplina, d.nazivdisciplina, MIN(r.vrijeme) AS vrijeme, r.bodovi, r.datum, o "
+		       + "FROM Rezultat r "
+		       + "JOIN Osoba o ON r.osoba.idosoba = o.idosoba " 
+		       + "JOIN Disciplina d ON r.disciplina.iddisciplina = d.iddisciplina "
+		       + "WHERE r.osoba.idosoba = :idosoba "
+		       + "GROUP BY r.disciplina.iddisciplina, d.nazivdisciplina, r.bodovi, r.datum, o "
+		       + "ORDER BY r.disciplina.iddisciplina ASC")
+	List<Object[]> findRezultatiByOsoba(@Param("idosoba") Long idosoba);
+
 
 
 

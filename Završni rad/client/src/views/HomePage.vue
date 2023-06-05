@@ -56,6 +56,11 @@ export default {
                     caption: 'Qualified Athletes', 
                     description: 'Explore the accomplishments of swimmers who have met the qualification limits in their respective events.',
                     route: '/qualified-athletes' 
+                },
+                {   src: 'katie.jpeg', 
+                    caption: 'Swimmers', 
+                    description: 'Discover Swim Times by Exceptional Athletes.',
+                    route: '/swimmers'
                 }, 
                 {   src: 'swim-pool.jpg',
                     caption: 'Pools', 

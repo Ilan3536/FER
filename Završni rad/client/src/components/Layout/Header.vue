@@ -46,7 +46,7 @@
                   rail
                   temporary
                   v-model="drawer"
-                  style="max-width: 200px; min-width: 120px; width: 20vw; height: 31.5vh; border-bottom-right-radius: 2%;"
+                  style="max-width: 200px; min-width: 120px; width: 20vw; height: 37vh; border-bottom-right-radius: 2%;"
                 >
                   
                   <v-divider></v-divider>
@@ -55,7 +55,8 @@
                     <v-list-item to="/" title="Home Page" value="myfiles" router></v-list-item>
                     <v-list-item to="/competitions" title="Competitions" value="myfiles" router></v-list-item>
                     <v-list-item to="/qualified-athletes" title="Qualified Athletes" value="myfiles" router></v-list-item>
-                    <v-list-item to="/pools" title="Pools" value="myfiles" router></v-list-item>
+                    <v-list-item to="/swimmers" title="Swimmers" value="Swimmers" router></v-list-item>
+                    <v-list-item to="/pools" title="Pools" value="Pools" router></v-list-item>
                     <v-list-item to="/world-records" title="World Records" value="myfiles" router></v-list-item>
                   </v-list>
            </v-navigation-drawer>

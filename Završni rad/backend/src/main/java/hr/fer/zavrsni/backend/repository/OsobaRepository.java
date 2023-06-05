@@ -12,5 +12,9 @@ public interface OsobaRepository extends JpaRepository<Osoba, Long> {
 
 	List<Osoba> findBySpol(String spol);
 
+	List<Osoba> findByIdosoba(Long idosoba);
+	
+	List<Osoba> findByImeosobaAndPrezimeosoba(String imeosoba, String prezimeosoba);
+
 }
 

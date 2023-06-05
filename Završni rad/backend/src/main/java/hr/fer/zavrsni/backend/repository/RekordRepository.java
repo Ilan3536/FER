@@ -19,6 +19,18 @@ public interface RekordRepository extends JpaRepository<Rekord, Long> {
 		       "INNER JOIN Natjecanje n ON r.natjecanje.idnatjecanje = n.idnatjecanje " +
 		       "WHERE r.idrezultat <= 34 " +
 		       "ORDER BY d.spol DESC, r.vrijeme ASC")
+	List<Object[]> findRekordi1();
+	
+	
+	@Query("SELECT o.imeosoba, o.prezimeosoba, d.nazivdisciplina, d.spol, to_char(r.vrijeme, 'HH24:MI:SS.MS') AS vrijeme, n.nazivnatjecanje, "
+			+ "osoba.drzava.nazivdrzava "
+	        + "FROM Rezultat r "
+	        + "INNER JOIN Osoba o ON r.osoba.idosoba = o.idosoba "
+	        + "INNER JOIN Disciplina d ON r.disciplina.iddisciplina = d.iddisciplina "
+		    + "INNER JOIN Natjecanje n ON r.natjecanje.idnatjecanje = n.idnatjecanje "
+	        + "WHERE r.vrijeme = "
+	        + "(SELECT rk.vrijeme FROM Rekord rk WHERE rk.disciplina.iddisciplina = r.disciplina.iddisciplina) "
+	        + "ORDER BY d.spol DESC, r.disciplina.iddisciplina")
 	List<Object[]> findRekordi();
 
 	

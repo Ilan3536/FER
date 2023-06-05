@@ -4,6 +4,7 @@ const state = {
     qualified: [],
     currentCompetition: [],
     eventResults: [],
+    rekordi: [],
 
 }
   
@@ -17,22 +18,13 @@ const mutations = {
     setEventResults(state, eventResults){
         state.eventResults = eventResults
     },
+    setSwimmerResults(state, swimmerResults){
+        state.rekordi = swimmerResults
+    },
 
 }
   
 const actions = {
-    /* fetchRezultati({ commit }){
-        console.log('/api/rezultati')
-        axios
-        .get('/rezultati')
-        .then(response => {
-            console.log("responseData: "  + response.data)
-            commit('setAllResults', response.data);
-        })
-        .catch(error => {
-            console.error(error)
-        })
-    }, */
     fetchQualified({ commit }){
         console.log('/api/rezultati/kvalificirani')
         axios
@@ -45,18 +37,6 @@ const actions = {
             console.error(error)
         })
     },
-    /* fetchResultsByCompetition({ commit }, id){
-        console.log(`/api/rezultati/natjecanje/${id}`)
-        axios
-        .get(`http://localhost:8080/rezultati/natjecanje/${id}`)
-        .then(response => {
-            console.log("responseData: "  + response.data)
-            commit('setCompetitionResults', response.data);
-        })
-        .catch(error => {
-            console.error(error)
-        })
-    }, */
     fetchResultsByCompetitionAndEvent({ commit }, payload){
         const {idn, idd } = payload
         console.log(`/api/rezultati/natjecanje/${idn}/disciplina/${idd}`)
@@ -69,7 +49,20 @@ const actions = {
         .catch(error => {
             console.error(error)
         })
-    }
+    },
+    fetchResultsByPerson({ commit }, id){
+        console.log(`/api/rezultati/osoba/${id}`)
+        axios
+        .get(`http://localhost:8080/rezultati/osoba/${id}`)
+        .then(response => {
+
+            console.log("response.data: " + response.data)
+            commit('setSwimmerResults', response.data);
+        })
+        .catch(error => {
+            console.error(error)
+        })
+    },
 }
   
 const getters = {

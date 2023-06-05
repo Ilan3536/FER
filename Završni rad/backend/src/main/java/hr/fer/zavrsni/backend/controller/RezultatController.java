@@ -47,5 +47,11 @@ public class RezultatController {
     	return ResponseEntity.ok(rezultatList);
     }
     
+    @GetMapping("/osoba/{id}")
+    public ResponseEntity<List<Object[]>> getRezultatiByOsoba(@PathVariable("id") Long id) {
+    	List<Object[]> rezultatList = rezultatRepository.findRezultatiByOsoba(id);
+    	return ResponseEntity.ok(rezultatList);
+    }
+    
     
 }

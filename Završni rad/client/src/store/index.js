@@ -5,6 +5,7 @@ import limiti from './modules/limiti'
 import bazeni from './modules/bazeni'
 import natjecanja from './modules/natjecanja'
 import discipline from './modules/discipline'
+import osobe from './modules/osobe'
 
 const store = createStore({
     modules: {
@@ -14,6 +15,7 @@ const store = createStore({
         bazeni: bazeni,
         natjecanja: natjecanja,
         discipline: discipline,
+        osobe: osobe,
     }
 })
 

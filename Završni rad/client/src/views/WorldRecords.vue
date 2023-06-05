@@ -25,6 +25,7 @@ export default {
             headers: [
                 { text: 'Name', value: 'name', sortable: true },
                 { text: 'Surname', value: 'surname', sortable: true },
+                { text: 'Country', value: 'country', sortable: true },
                 { text: 'Event', value: 'event', sortable: true },
                 { text: 'Gender', value: 'gender', sortable: true },
                 { text: 'Time', value: 'time', sortable: true },
@@ -59,6 +60,7 @@ export default {
                 gender: item[3],
                 time: item[4],
                 meet: item[5],
+                country: item[6]
             }
         })
         }

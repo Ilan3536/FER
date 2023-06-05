@@ -16,6 +16,7 @@
                                 <EventResults 
                                     :idnatjecanje="this.idnatjecanje"
                                     :iddisciplina="event.iddisciplina"
+                                    :vrstanatjecanje="currentCompetition.vrstanatjecanje"
                                 ></EventResults>
                             </v-expansion-panel-text>
                         </v-expansion-panel>
@@ -33,6 +34,7 @@
                                     <EventResults 
                                         :idnatjecanje="this.idnatjecanje"
                                         :iddisciplina="event.iddisciplina"
+                                        :vrstanatjecanje="currentCompetition.vrstanatjecanje"
                                     ></EventResults>
                                 </v-expansion-panel-text>
                             </v-expansion-panel>
