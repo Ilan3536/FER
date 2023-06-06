@@ -5,6 +5,7 @@ const state = {
     currentCompetition: [],
     eventResults: [],
     rekordi: [],
+    resultsCount: [],
 
 }
   
@@ -20,6 +21,9 @@ const mutations = {
     },
     setSwimmerResults(state, swimmerResults){
         state.rekordi = swimmerResults
+    },
+    setResultsCount(state, resultsCount){
+        state.resultsCount = resultsCount
     },
 
 }
@@ -58,6 +62,19 @@ const actions = {
 
             console.log("response.data: " + response.data)
             commit('setSwimmerResults', response.data);
+        })
+        .catch(error => {
+            console.error(error)
+        })
+    },
+    fetchRezultatiCount({ commit }, id){
+        console.log(`/api/rezultati/natjecanje/count/${id}`)
+        axios
+        .get(`http://localhost:8080/rezultati/natjecanje/count/${id}`)
+        .then(response => {
+
+            console.log("response.data: " + response.data)
+            commit('setResultsCount', response.data);
         })
         .catch(error => {
             console.error(error)

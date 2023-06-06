@@ -1,11 +1,12 @@
 <template>
-    <Layout>
+    <Layout title="Swimmers">
         <v-container class="list-container">
             <v-sheet width="300" class="mx-auto">
                 <v-form @submit.prevent="submitForm">
                 <v-text-field
                     v-model="name"
                     label="Swimmers First and Last Name"
+                    @keydown.enter="submitForm"
                 ></v-text-field>
                 <v-btn type="submit" block class="mt-2">Search</v-btn>
                 </v-form>
@@ -24,7 +25,14 @@ export default {
     },
     data(){
         return {
-            name:'',
+            name:'', 
+            rules : [
+                value => {
+                    if (value) return true
+
+                    return 'You must enter a full name'
+                }
+            ]
         }
     },
     computed: {
@@ -42,7 +50,7 @@ export default {
                 ime: ime,
                 prezime: prezime,
             })
-
+            console.log('fetched swimmer: ' + this.swimmer)
             if (this.swimmer.length != 0 ){
                 router.push(`/swimmers/${ime}/${prezime}`)
             }

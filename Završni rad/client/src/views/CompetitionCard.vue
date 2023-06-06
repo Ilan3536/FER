@@ -29,7 +29,15 @@
                     class="material-symbols-outlined"
                 >
                 description
-            </v-btn>
+                </v-btn>
+                <v-btn
+                    color="teal-darken-4"
+                    variant="text"
+                    @click="this.$router.push(`/competitions/chart/${competition.idnatjecanje}`)"
+                    class="material-symbols-outlined"
+                >
+                insert_chart
+                </v-btn>
 
             <v-spacer></v-spacer>
 

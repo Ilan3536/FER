@@ -4,7 +4,7 @@ import store from './store/index'
 import App from './App.vue';
 import router from './router';
 import axios from './util/axiosConfig'
-import { formatTime, formatYear } from './util/filters'
+import { formatTime, formatYear, formatDate } from './util/filters'
 
 // Vuetify
 import 'vuetify/styles'
@@ -32,6 +32,7 @@ const app = createApp(App)
 
 app.config.globalProperties.$formatTime = formatTime
 app.config.globalProperties.$formatYear = formatYear
+app.config.globalProperties.$formatDate = formatDate
 
 app.component('EasyDataTable', Vue3EasyDataTable);
 app.use(vuetify)

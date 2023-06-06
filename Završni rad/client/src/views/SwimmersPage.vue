@@ -1,12 +1,21 @@
 <template>
-    <Layout title="Swimmer">
-        <v-container class="container-center">
-            <EasyDataTable
-                :headers="headers"
-                :items="mappedRekordi"
-                buttons-pagination
-            />
-        </v-container>
+    <Layout :title="swimmer[0].idosoba + ' ' + swimmer[0].imeosoba + ' ' +swimmer[0].prezimeosoba">
+        <div v-if="swimmer.length > 0">
+            <h2 class="centered">
+                {{ swimmer[0].klub.nazivklub + ", " + swimmer[0].drzava.nazivdrzava}}
+            </h2>
+            <h4 class="centered"> 
+                {{ "Date of birth: " + $formatDate(swimmer[0].datumrodjenja) + 
+                ",  height: " + swimmer[0].visina + "cm,  weight: " + swimmer[0].tezina + "kg"  }}
+                </h4>
+            <v-container class="container-center">
+                <EasyDataTable
+                    :headers="headers"
+                    :items="mappedRekordi"
+                    buttons-pagination
+                />
+            </v-container>
+        </div>
     </Layout>
 </template>
 <script>
@@ -31,21 +40,11 @@ export default {
             mappedRekordi:[]
         }
     },
-    async created(){
-        await this.fetchSwimmer({
+    created(){
+        this.fetchSwimmer({
                 ime: this.$route.params.ime,
                 prezime: this.$route.params.prezime,
-            })
-        this.fetchResultsByPerson(this.swimmer.idosoba)
-        
-    },
-    async mounted(){
-        await this.fetchSwimmer({
-                ime: this.$route.params.ime,
-                prezime: this.$route.params.prezime,
-            })
-        this.fetchResultsByPerson(this.swimmer.idosoba)
-        
+            })        
     },
     computed: {
         ...mapState('osobe', ['swimmer']),
@@ -58,6 +57,11 @@ export default {
                 this.mapRekordi(rekordi)
             },
         },
+        swimmer: {
+            handler(swimmer) {
+                this.fetchResultsByPerson(swimmer[0].idosoba)
+            }
+        }
     },
     methods: {
         ...mapActions('osobe', ['fetchSwimmer']),
@@ -67,9 +71,9 @@ export default {
             return {
                 eventid: item[0],
                 event: item[1],
-                time: item[2],
+                time: this.$formatTime(item[2]),
                 points: item[3],
-                date: item[4],
+                date: this.$formatDate(item[4]),
                 person: item[5],
             }
         })
@@ -85,6 +89,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
     
 </style>

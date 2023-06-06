@@ -35,14 +35,26 @@ public interface RezultatRepository extends JpaRepository<Rezultat, Long> {
 	List<Rezultat> findByNatjecanjeIdnatjecanjeAndDisciplinaIddisciplinaOrderByVrijemeAsc(Long idn, Long idd);
 	
 	
-	@Query("SELECT r.disciplina.iddisciplina, d.nazivdisciplina, MIN(r.vrijeme) AS vrijeme, r.bodovi, r.datum, o "
-		       + "FROM Rezultat r "
-		       + "JOIN Osoba o ON r.osoba.idosoba = o.idosoba " 
-		       + "JOIN Disciplina d ON r.disciplina.iddisciplina = d.iddisciplina "
-		       + "WHERE r.osoba.idosoba = :idosoba "
-		       + "GROUP BY r.disciplina.iddisciplina, d.nazivdisciplina, r.bodovi, r.datum, o "
-		       + "ORDER BY r.disciplina.iddisciplina ASC")
+	@Query("SELECT r.disciplina.iddisciplina, d.nazivdisciplina, r.vrijeme, r.bodovi, r.datum, 0 "
+	        + "FROM Rezultat r "
+	        + "JOIN Osoba o ON r.osoba.idosoba = o.idosoba "
+	        + "JOIN Disciplina d ON r.disciplina.iddisciplina = d.iddisciplina "
+	        + "WHERE r.osoba.idosoba = :idosoba "
+	        + "AND r.vrijeme = (SELECT MIN(rez.vrijeme) "
+	        + "                 FROM Rezultat rez "
+	        + "                 WHERE rez.osoba.idosoba = :idosoba "
+	        + "                 AND rez.disciplina.iddisciplina = d.iddisciplina) "
+	        + "ORDER BY r.disciplina.iddisciplina ASC")
 	List<Object[]> findRezultatiByOsoba(@Param("idosoba") Long idosoba);
+	
+	
+	@Query("SELECT r.disciplina.iddisciplina, r.disciplina.nazivdisciplina, r.disciplina.spol, COUNT(r.disciplina.iddisciplina) AS brojprijavljenih "
+			+ "FROM Rezultat r "
+			+ "JOIN Disciplina d ON r.disciplina.iddisciplina = d.iddisciplina "
+			+ "WHERE r.natjecanje.idnatjecanje = :idnatjecanje "
+			+ "GROUP BY r.disciplina.iddisciplina, r.disciplina.nazivdisciplina, r.disciplina.spol "
+	        + "ORDER BY r.disciplina.iddisciplina ASC")
+	List<Object[]> findCountByNatjecanjeIdNatjecanje(Long idnatjecanje);
 
 
 

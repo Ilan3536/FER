@@ -43,6 +43,20 @@ const actions = {
             console.error(error)
         })
     },
+    addCompetition({payload}) {
+        console.log('/api/natjecanja' , payload)
+        console.log('/api/natjecanja' , payload.competitionData)
+        axios
+          .post('http://localhost:8080/natjecanja', payload.competitionData)
+          .then(response => {
+            console.log('Competition added successfully:', response.data);
+            // You can perform additional actions here if needed
+          })
+          .catch(error => {
+            console.error('Error adding competition:', error);
+            // Handle the error or show a notification to the user
+          });
+      },
 }
   
 const getters = {

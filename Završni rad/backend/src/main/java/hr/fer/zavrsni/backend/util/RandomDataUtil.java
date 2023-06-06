@@ -31,11 +31,15 @@ public class RandomDataUtil {
 	};
 	static String[] lowerBounds = populateBound(3);
 	static String[] upperBounds = populateBound(9);
-	static int RESULTS = 20;
+	static int RESULTS = 10;
 	public static void main(String[] args) {
 
 		int iddisciplina = 1;
-		int indexrez = 1395;
+		int indexrez = 3075;
+		
+		String datumnatjecanja = "\'2023-05-06\'";
+		int idnatjecanje = 18;
+		
 //		for (int i= 35; i < 600; i+=RESULTS) {
 //			generateOsobe( "M" , i); //starting index for osoba
 //		}
@@ -44,22 +48,22 @@ public class RandomDataUtil {
 //		}
 
 		for (; iddisciplina < 35; iddisciplina++) {
-			generateRezultati(iddisciplina, indexrez, worldRecords[iddisciplina]); //starting index for rezultat
+			generateRezultati(iddisciplina, indexrez, worldRecords[iddisciplina], datumnatjecanja, idnatjecanje); //starting index for rezultat
 			indexrez+=RESULTS;
 		}
 		
 	}
 	
 	
-	public static void generateRezultati(int iddisciplina, int index, String rekord) {
+	public static void generateRezultati(int iddisciplina, int index, String rekord, String datum, int idnatjecanje) {
 		 String ouputfilePathRez = 
-				 "C:\\FER\\git_repo_FER\\FER\\Završni rad\\backend\\src\\main\\resources\\static\\REZULTATI-SISAK.txt";
+				 "C:\\FER\\git_repo_FER\\FER\\Završni rad\\backend\\src\\main\\resources\\static\\REZULTATI-18.txt";
 	        int i = index; //starting index for rezultat
 	        String timeRange1 = lowerBounds[iddisciplina];
 	        String timeRange2 = upperBounds[iddisciplina];
 	        List<Integer> randomOsobe =  iddisciplina % 2 != 0 ? 
-	        		new ArrayList<Integer>(generateDifferentRandomNumbers(RESULTS, 35, 614)) : 
-	        		new ArrayList<Integer>(generateDifferentRandomNumbers(RESULTS, 614, 1019));
+	        		new ArrayList<Integer>(generateDifferentRandomNumbers(RESULTS, 35, 208)) : 
+	        		new ArrayList<Integer>(generateDifferentRandomNumbers(RESULTS, 615, 715));
 	        
 	        try ( FileWriter writerRez = new FileWriter(ouputfilePathRez, true)) {
 	        	
@@ -67,9 +71,10 @@ public class RandomDataUtil {
 	        	for (i = 0; i < randomOsobe.size(); i++) {
 	        		System.out.println("time1: " + timeRange1 + " time2: " + timeRange2);
 	        		String time = generateRandomTime(timeRange1, timeRange2).toString();
-	        		rezultat = "(" + index++ + ", " + iddisciplina + ", 12, \'1970-01-01 " + time + 
+	        		rezultat = "(" + index++ + ", " + iddisciplina + ", "+ 
+	        				idnatjecanje + ", \'1970-01-01 " + time + 
 	        				"\', " + calculatePoints(rekord, time) + ", " +
-	        				"\'2023-03-18\'" + ", " + randomOsobe.get(i) + "),\n";
+	        				datum + ", " + randomOsobe.get(i) + "),\n";
 	        		
 
 	        		writerRez.write(rezultat);

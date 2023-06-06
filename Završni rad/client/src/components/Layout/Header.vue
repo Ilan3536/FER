@@ -15,7 +15,7 @@
   
           <v-spacer></v-spacer>
 
-          <div v-if="title=='Competition pages'">
+          <div v-if="title=='Competition pages' || title=='Number of Swimmers by Event'">
             <v-btn density="comfortable" style="background-color: teal;">
               <router-link to="/competitions" class="router">
                 Back to competitions

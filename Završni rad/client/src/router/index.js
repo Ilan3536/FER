@@ -7,6 +7,7 @@ import Swimmers from '../views/Swimmers.vue'
 import SwimmersPage from '../views/SwimmersPage.vue'
 import Competitions from '../views/Competitions'
 import CompetitionPage from '../views/CompetitionPage'
+import ChartComponent from '../views/ChartComponent'
 
 const routes = [
   {
@@ -43,6 +44,11 @@ const routes = [
     path: '/competitions',
     name: 'Competitions',
     component: Competitions
+  },
+  {
+    path: '/competitions/chart/:id',
+    name: 'ChartComponent',
+    component: ChartComponent
   },
   {
     path: '/competitions/:id',

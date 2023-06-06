@@ -10,5 +10,7 @@ import hr.fer.zavrsni.backend.model.Bazen;
 
 @Repository
 public interface BazenRepository extends JpaRepository<Bazen, Long>{
+	
+	List<Bazen> findByNazivbazen(String nazivbazen);
 
 }
