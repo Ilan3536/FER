@@ -18,6 +18,9 @@ public interface NatjecanjeRepository extends JpaRepository<Natjecanje, Long> {
 	
 	
 	List<Natjecanje> findAllByOrderByDatumodDesc();
+	
+    @Query("SELECT DISTINCT n.vrstanatjecanje FROM Natjecanje n WHERE n.vrstanatjecanje <> ''")
+	List<String> findDistinctCompetitionTypes();
 
     
 	

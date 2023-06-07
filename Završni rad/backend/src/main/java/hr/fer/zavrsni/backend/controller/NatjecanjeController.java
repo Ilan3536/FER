@@ -45,7 +45,12 @@ public class NatjecanjeController {
         Natjecanje createdNatjecanje = natjecanjeRepository.save(natjecanje);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdNatjecanje);
     }
-
+    
+    @GetMapping("/vrste")
+    public ResponseEntity<List<String>> getDistinctCompetitionTypes() {
+        List<String> natjecanjeList = natjecanjeRepository.findDistinctCompetitionTypes();
+        return ResponseEntity.ok(natjecanjeList);
+    }
     
     
 }

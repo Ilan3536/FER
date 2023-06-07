@@ -1,26 +1,30 @@
 <template>
-    <form @submit="submit">
+    <form @submit.prevent="handleSubmit">
       <v-text-field
-        v-model="nazivnatjecanje.value.value"
+        v-model="nazivnatjecanje"
         :counter="30"
-        :error-messages="nazivnatjecanje.errorMessage.value"
         label="Competition Name"
+        :error-messages="getErrorMessage('nazivnatjecanje')"
       ></v-text-field>
 
       <v-text-field
-        v-model="datumod.value.value"
+        v-model="datumod"
         label="Date from"
-        :error-messages="datumod.errorMessage.value"
+        type="date"
+        :error-messages="getErrorMessage('datumod')"
+
       ></v-text-field>
 
       <v-text-field
-        v-model="datumdo.value.value"
+        v-model="datumdo"
         label="Date to"
-        :error-messages="datumdo.errorMessage.value"
+        type="date"
+        :error-messages="getErrorMessage('datumdo')"
+
       ></v-text-field>
       
       <v-select
-            v-model="bazen.value.value"
+            v-model="bazen"
             :items="pools"
             item-title="nazivbazen"
             item-value="idbazen"
@@ -28,19 +32,18 @@
             persistent-hint
             return-object
             single-line
-            :error-messages="bazen.errorMessage.value"
+            :error-messages="getErrorMessage('bazen')"
         ></v-select>
   
-        <!-- <v-radio-group v-model="radiobox.value.value" inline>
-            <v-radio 
-                v-for="item in items"
-                :key="item.id"
-                :label="item.name"
-                :value="item"
-                :error-messages="radiobox.errorMessage.value"
+        <v-radio-group v-model="vrstanatjecanje" inline>
+            <v-radio
+                v-for="type in types"
+                :key="type"
+                :label="type"
+                :value="type"
             >
             </v-radio>
-        </v-radio-group> -->
+        </v-radio-group> 
   
       <v-btn class="me-4" type="submit"> submit </v-btn>
   
@@ -48,99 +51,107 @@
     </form>
   </template>
   
-  <script>
-    import { ref } from 'vue'
-    import { useField, useForm } from 'vee-validate'
-    import { mapActions, mapState, useStore } from 'vuex'
-  
-    export default {
-      setup() {
-        const { handleSubmit, handleReset } = useForm({
-          validationSchema: {
-            nazivnatjecanje(value) {
-              if (value?.length >= 2) return true
-  
-              return 'Name needs to be at least 2 characters.'
-            },
-            datumod(value) {
-                if (value) return true
-  
-                return 'Select an item.'
-            },
-            datumdo(value) {
-                if (value) return true
-  
-                return 'Select an item.'
-            },
-            bazen(value) {
-              if (value) return true
-  
-              return 'Select an item.'
-            },
-            /* vrsta(value) {
-              if (value) return true
-  
-              return 'Must be selected.'
-            }, */
-          },
-        })
-        const nazivnatjecanje = useField('nazivnatjecanje')
-        const datumod = useField('datumod')
-        const datumdo = useField('datumdo')
-        const bazen = useField('bazen')
-        //const radiobox = useField('radiobox')
-  
-        const items = ref([{
-            id: 1,
-            name: 'olympic games',
-            checked: false,
-        }, 
-        {
-            id: 2,
-            name: 'world championships',
-            checked: false,
-        },
-        {
-            id: 3,
-            name: 'international swim meet',
-            checked: false,
-        },
-        {
-            id: 4,
-            name: 'national swim meet',
-            checked: false,
-        }
-        ])
-   
-        const store = useStore();
+<script>
+import { mapActions, mapState } from 'vuex'
 
-        const submit = handleSubmit(values => {
-            console.log(values)
-            store.dispatch('natjecanja/addCompetition', {
-                competitionData: values
-            })
-        })
-  
+export default {
+    name: 'AddFrom',
+    data() {
         return {
-          nazivnatjecanje,
-          datumdo,
-          datumod,
-          bazen,
-          //radiobox,
-          items,
-          submit,
-          handleReset,
+            nazivnatjecanje: '',
+            datumod: '',
+            datumdo:'',
+            bazen:'Select pool',
+            vrstanatjecanje:'',
+            formErrors: {},
         }
-      },
-      created() {
+    },
+    created() {
         this.fetchPools()
-      },
-      computed: {
-        ...mapState('bazeni', ['pools'])
-      },
-      methods: {
+        this.fetchTypes()
+    },
+    computed: {
+        ...mapState('bazeni', ['pools']),
+        ...mapState('natjecanja', ['types'])
+    },
+    methods: {
         ...mapActions('bazeni', ['fetchPools']),
-      }
-    }
-  </script>
+        ...mapActions('natjecanja', ['fetchTypes', 'addCompetition']),
+        handleSubmit(){
+
+            if (!this.validateForm()) {
+                return
+            } 
+            const competitionData = {
+                nazivnatjecanje: this.nazivnatjecanje,
+                vrstanatjecanje: this.vrstanatjecanje,
+                datumod: this.datumod,
+                datumdo: this.datumdo,
+                bazen: this.bazen,
+
+            }
+
+            this.addCompetition({
+                competitionData: competitionData
+            })  
+
+        },
+        handleReset(){
+            this.nazivnatjecanje = ''
+            this.datumod = ''
+            this.datumdo = ''
+            this.bazen = 'Select pool',
+            this.vrstanatjecanje = ''
+        },
+        validateForm() {
+            let isValid = true
+            this.formErrors = {}
+
+            if (!this.nazivnatjecanje) {
+                this.setErrorMessage('nazivnatjecanje', 'Competition Name is required')
+                isValid = false
+            } else if (this.nazivnatjecanje.length < 2) {
+                this.setErrorMessage('nazivnatjecanje', 'Competition Name must be at least 2 characters')
+                isValid = false
+            }
+
+            if (!this.datumod) {
+                this.setErrorMessage('datumod', 'Date from is required')
+                isValid = false
+            }
+
+            if (!this.datumdo) {
+                this.setErrorMessage('datumdo', 'Date to is required')
+                isValid = false
+            }
+
+            const datefrom = new Date(this.datumod)
+            const dateto = new Date(this.datumdo)
+
+            if (datefrom > dateto){
+                this.setErrorMessage('datumdo', 'Date to has to be after Date From')
+                isValid = false
+            }
+
+            if (!this.bazen || this.bazen == 'Select pool') {
+                this.setErrorMessage('bazen', 'Pool has to be selected')
+                isValid = false
+            }
+
+            return isValid
+
+        },
+        getErrorMessage(fieldName) {
+            return this.formErrors[fieldName] || []
+        },
+        setErrorMessage(fieldName, message) {
+            if (!this.formErrors[fieldName]) {
+                this.formErrors[fieldName] = []
+            }
+
+        this.formErrors[fieldName].push(message)
+        },
+    },
+}
+</script>
   
