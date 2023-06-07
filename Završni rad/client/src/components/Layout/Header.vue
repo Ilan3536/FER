@@ -15,17 +15,13 @@
   
           <v-spacer></v-spacer>
 
-          <div v-if="title=='Competition pages' || title=='Number of Swimmers by Event'">
+          <div v-if="title=='Competition pages' || title=='Number of Swimmers by'">
             <v-btn density="comfortable" style="background-color: teal;">
               <router-link to="/competitions" class="router">
                 Back to competitions
               </router-link>
             </v-btn>
           </div>
-
-          <v-btn icon>
-            <v-icon>mdi-magnify</v-icon>
-          </v-btn>
   
           <v-btn icon>
             <router-link to="/" style="color:white">
@@ -34,8 +30,6 @@
             </router-link>
           </v-btn>
 
-          
-  
           <v-btn icon>
             <v-icon>mdi-dots-vertical</v-icon>
           </v-btn>

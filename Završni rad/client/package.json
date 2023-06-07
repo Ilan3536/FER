@@ -17,8 +17,6 @@
     "bootstrap-vue": "^2.23.1",
     "chart.js": "^3.9.1",
     "core-js": "^3.8.3",
-    "devextreme": "^22.2.4",
-    "devextreme-vue": "^22.2.4",
     "vee-validate": "^4.5.8",
     "vue": "^3.3.4",
     "vue-chart-3": "^3.1.8",
@@ -26,8 +24,8 @@
     "vue-search-input": "^1.1.11",
     "vue3-easy-data-table": "^1.5.42",
     "vuetify": "^3.3.2",
-    "vuex": "^4.1.0",
-    "yup": "^1.2.0"
+    "vuex": "^4.1.0"
+
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -35,7 +33,6 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "devextreme-themebuilder": "^22.2.4",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "http-proxy-middleware": "^2.0.6"

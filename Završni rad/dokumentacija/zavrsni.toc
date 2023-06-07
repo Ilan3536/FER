@@ -1,0 +1,16 @@
+\babel@toc {croatian}{}\relax 
+\contentsline {chapter}{\numberline {1}Uvod}{1}{}%
+\contentsline {chapter}{\numberline {2}Specifikacija zahtjeva}{2}{}%
+\contentsline {section}{\numberline {2.1}Analiza zahjteva}{2}{}%
+\contentsline {section}{\numberline {2.2}Obrasci uporabe}{2}{}%
+\contentsline {section}{\numberline {2.3}Opis obrazaca uporabe}{3}{}%
+\contentsline {chapter}{\numberline {3}Baza podataka}{4}{}%
+\contentsline {section}{\numberline {3.1}Korištene tehnologije}{4}{}%
+\contentsline {section}{\numberline {3.2}ER Model}{4}{}%
+\contentsline {section}{\numberline {3.3}Relacijski model}{4}{}%
+\contentsline {section}{\numberline {3.4}Stvaranje baze podataka}{4}{}%
+\contentsline {chapter}{\numberline {4}Web aplikacija}{5}{}%
+\contentsline {section}{\numberline {4.1}Korištene tehnologije}{5}{}%
+\contentsline {section}{\numberline {4.2}Korisničke upute}{5}{}%
+\contentsline {chapter}{\numberline {5}Zaključak}{6}{}%
+\contentsline {chapter}{Literatura}{7}{}%

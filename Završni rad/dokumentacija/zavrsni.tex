@@ -1,0 +1,116 @@
+\documentclass[times, utf8, zavrsni]{fer}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\begin{document}
+
+% TODO: Navedite broj rada.
+\thesisnumber{000}
+
+% TODO: Navedite naslov rada.
+\title{Baza podataka i web-aplikacija za plivačka natjecanja}
+
+% TODO: Navedite vaše ime i prezime.
+\author{Ilan Vezmarović}
+
+\maketitle
+
+% Ispis stranice s napomenom o umetanju izvornika rada. Uklonite naredbu \izvornik ako želite izbaciti tu stranicu.
+% \izvornik
+
+% Dodavanje zahvale ili prazne stranice. Ako ne želite dodati zahvalu, naredbu ostavite radi prazne stranice.
+\zahvala{}
+
+\tableofcontents
+
+\chapter{Uvod}
+U današnjem dobu digitalne revolucije, postoji sve veća potreba za praćenjem i analizom sportskih rezultata. 
+Plivanje je jedan od sportova za koji je izražena potreba za pohranom velikog broja informacija.
+Rezultat navedenog je velik broj sportskih aplikacija. Kod aplikacije vrlo bitno da bude
+jednostavna i intuitivna za korisničko korištenje.
+
+\vspace{\baselineskip}
+
+Motivacija za izradu ove aplikacije proizlazi iz želje da se omogući plivačima, trenerima i 
+drugim zainteresiranim korisnicima jednostavan i intuitivan pristup njihovim rezultatima. 
+Kroz jednostavno korisničko sučelje, korisnici će moći brzo i lako pregledavati, 
+analizirati i pratiti postignuća plivača na temelju plivačkih rezultata.
+
+\vspace{\baselineskip}
+
+Za izgradnju ovakvog sustava bitne su dvije stvari. Prvo se treba definirati
+dobro strukturirana i skalabilna baza podataka u koju će se pohranjivati svi podaci.
+Druga bitna stvar je oblikvanje preglednog i jednostavnog korisničkog sučelja koje će
+korisnicima omogućiti ugodan pristup podacima.
+
+\vspace{\baselineskip}
+
+U prvom dijelu rada navedena je specifikacija zahtjeva koje sustav treba ispuniti i njihova analiza.
+U drugom dijelu detaljno je opisano oblikavanje i struktura baze podataka. U trećem dijelu opisana je interna 
+implementacija web aplikacije te upute za korisnika.
+
+\chapter{Specifikacija zahtjeva}
+
+\section{Analiza zahjteva}
+Na početku izrade ovakvog sustava potrebno je definirati korisnike i njihove zahjteve koje će sustav omogućavati.
+Primarni i jedini korisnik sustava je posjtetitelj koji pregledava podatke o plivačkim aktivnostima.
+
+Osnovni zahtjev posjetitelja je pregled i pretraživanje podataka o:
+\begin{itemize}
+    \item[a)] plivačkim natjecanjima
+    \item[b)] plivačkim rezultatima
+    \item[c)] bazenima
+    \item[d)] svjetskim rekordima
+    \item[e)] limitima za nastupa na PH$^1$
+    \item[f)] kvalificiranim plivačima za PH$^1$
+    \item[g)] registriranim plivačima
+\end{itemize}
+
+
+Posjetitelj također ima opciju dodavanja novih natjecanja.
+
+
+\footnote{Prvenstvo Hrvatske}
+
+\section{Obrasci uporabe}
+
+Modeliranje funkcionalnih zahtjeva sustava ostvareno je dijagramom obrazaca uporabe (Use case) izraženih kao UML dijagram
+s tekstualnim opisima obrazaca. Dijagram opisuje tipičnu uporabu sustava značajnu korisniku (aktoru) te prikazuje pogled na sustav koji naglašava njegovo
+vanjsko ponašanje prema korisniku (pogled interakcije). Na slici prikazan je dijagram obrazaca uporabe.
+
+\section{Opis obrazaca uporabe}
+
+\chapter{Baza podataka}
+\section{Korištene tehnologije}
+\section{ER Model}
+\section{Relacijski model}
+\section{Stvaranje baze podataka}
+
+\chapter{Web aplikacija}
+\section{Korištene tehnologije}
+\section{Korisničke upute}
+
+
+\chapter{Zaključak}
+Zaključak.
+
+\citation{oetiket2007lshort}
+
+\bibliography{literatura}
+\bibliographystyle{fer}
+
+\begin{sazetak}
+Sažetak na hrvatskom jeziku.
+
+\kljucnerijeci{Ključne riječi, odvojene zarezima.}
+\end{sazetak}
+
+% TODO: Navedite naslov na engleskom jeziku.
+\engtitle{Title}
+\begin{abstract}
+Abstract.
+
+\keywords{Keywords.}
+\end{abstract}
+
+\end{document}
