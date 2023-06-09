@@ -150,6 +150,39 @@ INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\ulem\ulem.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\ulem\ulem.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\ulem\ulem.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\ulem\ulem.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy6.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1ptm.fd
@@ -240,12 +273,12 @@ INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\am
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-OUTPUT zavrsni.toc
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmrc8t.vf
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+OUTPUT zavrsni.toc
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
@@ -256,6 +289,15 @@ INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\am
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT .\usecase2.jpg
+INPUT .\usecase2.jpg
+INPUT usecase2.jpg
+INPUT .\usecase2.jpg
+INPUT .\usecase2.jpg
+INPUT .\usecase2.jpg
+INPUT .\usecase2.jpg
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
@@ -264,13 +306,145 @@ INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\time
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT .\ER model.png
+INPUT .\ER model.png
+INPUT ER model.png
+INPUT .\ER model.png
+INPUT .\ER model.png
+INPUT .\ER model.png
+INPUT .\ER model.png
+INPUT .\Relacijski model.png
+INPUT .\Relacijski model.png
+INPUT Relacijski model.png
+INPUT .\Relacijski model.png
+INPUT .\Relacijski model.png
+INPUT .\Relacijski model.png
+INPUT .\Relacijski model.png
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrb8t.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrb8t.vf
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrb8r.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT .\model.png
+INPUT .\model.png
+INPUT model.png
+INPUT .\model.png
+INPUT .\model.png
+INPUT .\model.png
+INPUT .\model.png
+INPUT .\repository.png
+INPUT .\repository.png
+INPUT repository.png
+INPUT .\repository.png
+INPUT .\repository.png
+INPUT .\repository.png
+INPUT .\repository.png
+INPUT .\controller.png
+INPUT .\controller.png
+INPUT controller.png
+INPUT .\controller.png
+INPUT .\controller.png
+INPUT .\controller.png
+INPUT .\controller.png
+INPUT .\vue.js-api.png
+INPUT .\vue.js-api.png
+INPUT vue.js-api.png
+INPUT .\vue.js-api.png
+INPUT .\vue.js-api.png
+INPUT .\vue.js-api.png
+INPUT .\vue.js-api.png
+INPUT .\vue.js-component.png
+INPUT .\vue.js-component.png
+INPUT vue.js-component.png
+INPUT .\vue.js-component.png
+INPUT .\vue.js-component.png
+INPUT .\vue.js-component.png
+INPUT .\vue.js-component.png
+INPUT .\competition-add.png
+INPUT .\competition-add.png
+INPUT competition-add.png
+INPUT .\competition-add.png
+INPUT .\competition-add.png
+INPUT .\competition-add.png
+INPUT .\competition-add.png
+INPUT .\competition-details.png
+INPUT .\competition-details.png
+INPUT competition-details.png
+INPUT .\competition-details.png
+INPUT .\competition-details.png
+INPUT .\competition-details.png
+INPUT .\competition-details.png
+INPUT .\competition-form.png
+INPUT .\competition-form.png
+INPUT competition-form.png
+INPUT .\competition-form.png
+INPUT .\competition-form.png
+INPUT .\competition-form.png
+INPUT .\competition-form.png
+INPUT .\qualified-athletes.png
+INPUT .\qualified-athletes.png
+INPUT qualified-athletes.png
+INPUT .\qualified-athletes.png
+INPUT .\qualified-athletes.png
+INPUT .\qualified-athletes.png
+INPUT .\qualified-athletes.png
+INPUT .\swimmers.png
+INPUT .\swimmers.png
+INPUT swimmers.png
+INPUT .\swimmers.png
+INPUT .\swimmers.png
+INPUT .\swimmers.png
+INPUT .\swimmers.png
+INPUT .\swimmers-page.png
+INPUT .\swimmers-page.png
+INPUT swimmers-page.png
+INPUT .\swimmers-page.png
+INPUT .\swimmers-page.png
+INPUT .\swimmers-page.png
+INPUT .\swimmers-page.png
+INPUT .\pool.png
+INPUT .\pool.png
+INPUT pool.png
+INPUT .\pool.png
+INPUT .\pool.png
+INPUT .\pool.png
+INPUT .\pool.png
+INPUT .\world-records.png
+INPUT .\world-records.png
+INPUT world-records.png
+INPUT .\world-records.png
+INPUT .\world-records.png
+INPUT .\world-records.png
+INPUT .\world-records.png
 INPUT .\zavrsni.bbl
 INPUT zavrsni.bbl
 INPUT .\zavrsni.bbl
 INPUT zavrsni.bbl
 INPUT zavrsni.aux
-INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrb8a.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrb8a.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
@@ -279,3 +453,5 @@ INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\tim
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmri8a.pfb
+INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmri8a.pfb

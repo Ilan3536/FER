@@ -16,7 +16,6 @@ public interface NatjecanjeRepository extends JpaRepository<Natjecanje, Long> {
 
 	List<Natjecanje> findByIdnatjecanje(Long idnatjecanje);
 	
-	
 	List<Natjecanje> findAllByOrderByDatumodDesc();
 	
     @Query("SELECT DISTINCT n.vrstanatjecanje FROM Natjecanje n WHERE n.vrstanatjecanje <> ''")

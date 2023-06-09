@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.7)  7 JUN 2023 23:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.7)  9 JUN 2023 00:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -236,31 +236,74 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count284
 \@lastruleclass=\count285
 \@thisrulewidth=\dimen183
+) (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 5.
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box54
+\UL@hyphenbox=\box55
+\UL@skip=\skip56
+\UL@hook=\toks27
+\UL@height=\dimen184
+\UL@pe=\count286
+\UL@pixel=\dimen185
+\ULC@box=\box56
+Package: ulem 2019/11/18
+\ULdepth=\dimen186
+) (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count287
+\lst@gtempboxa=\box57
+\lst@token=\toks28
+\lst@length=\count288
+\lst@currlwidth=\dimen187
+\lst@column=\count289
+\lst@pos=\count290
+\lst@lostspace=\dimen188
+\lst@width=\dimen189
+\lst@newlines=\count291
+\lst@lineno=\count292
+\lst@maxwidth=\dimen190
+ (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count293
+\lst@skipnumbers=\count294
+\lst@framebox=\box58
+) (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 20.
  (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count295
+\l__pdf_internal_box=\box59
 ) (zavrsni.aux)
 \openout1 = `zavrsni.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -298,17 +341,17 @@ LaTeX Font Info:    ... okay on input line 5.
 
 (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen184
-\scratchbox=\box55
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen185
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count296
+\scratchdimen=\dimen191
+\scratchbox=\box60
+\nofMPsegments=\count297
+\nofMParguments=\count298
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen192
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
+\everyMPtoPDFconversion=\toks30
 ) (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -316,65 +359,241 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 16.
+\c@lstlisting=\count302
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 31.
  (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
  (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
  (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/Ilan Vezmarovic/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] [3] (zavrsni.toc)
+{C:/Users/Ilan Vezmarovic/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] [3] (zavrsni.toc [4
+
+])
 \tf@toc=\write3
 \openout3 = `zavrsni.toc'.
 
- [4
-
-]
+ [5]
 Poglavlje 1.
 [1
 
 ]
 Poglavlje 2.
+<usecase2.jpg, id=21, 829.0975pt x 762.85pt>
+File: usecase2.jpg Graphic file (type jpg)
+<use usecase2.jpg>
+Package pdftex.def Info: usecase2.jpg  used on input line 100.
+(pdftex.def)             Requested size: 540.61488pt x 497.41805pt.
+
+Overfull \hbox (59.19806pt too wide) in paragraph at lines 99--102
+ []|  [] 
+ []
+
 [2
 
-] [3]
+] [3 <./usecase2.jpg>] [4
+
+] [5] [6] [7] [8] [9]
 Poglavlje 3.
-[4
+[10
+
+] [11
 
 ]
+<ER model.png, id=56, 1209.51875pt x 719.68875pt>
+File: ER model.png Graphic file (type png)
+<use ER model.png>
+Package pdftex.def Info: ER model.png  used on input line 333.
+(pdftex.def)             Requested size: 540.60573pt x 321.67162pt.
+
+Overfull \hbox (56.90887pt too wide) in paragraph at lines 333--335
+ []| [] 
+ []
+
+
+Overfull \hbox (5.90642pt too wide) in paragraph at lines 343--344
+\T1/ptm/b/n/12 OSOBA \T1/ptm/m/n/12 - $[]$, ime-osoba, pre-zi-me-osoba, spol, da-tu-mro-dje-nja, vi-sina, te-zina, |   [],
+ []
+
+
+Overfull \hbox (4.55923pt too wide) in paragraph at lines 351--353
+[]\T1/ptm/b/n/12 NATJECANJE \T1/ptm/m/n/12 - $[]$, na-ziv-na-tje-ca-nje, vr-sta-na-tje-ca-nje, da-tu-mod, da-tumdo, 
+ []
+
+[12
+
+ <./ER model.png>] [13]
+Overfull \hbox (5.47256pt too wide) in paragraph at lines 444--449
+\T1/ptm/m/n/12 Relacija 'Osoba' sa-drºi pri-marni klju£ koji jed-noz-na£no iden-ti-fi-cira svaku osobu.
+ []
+
+[14]
+Overfull \hbox (3.35991pt too wide) in paragraph at lines 462--466
+\T1/ptm/m/n/12 Relacija 'Na-tje-ca-nje' sa-drºi pri-marni klju£ 'id-na-tje-ca-nje' koji jed-noz-na£no iden-
+ []
+
+[15]
+<Relacijski model.png, id=72, 744.7825pt x 959.585pt>
+File: Relacijski model.png Graphic file (type png)
+<use Relacijski model.png>
+Package pdftex.def Info: Relacijski model.png  used on input line 513.
+(pdftex.def)             Requested size: 455.25992pt x 586.5613pt.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 522.
+ (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [16] [17] [18] [19] [20 <./Relacijski model.png (PNG copy)>]
 Poglavlje 4.
-[5
+[21
+
+] [22] [23]
+<model.png, id=101, 384.83775pt x 370.38374pt>
+File: model.png Graphic file (type png)
+<use model.png>
+Package pdftex.def Info: model.png  used on input line 705.
+(pdftex.def)             Requested size: 284.54059pt x 273.8536pt.
+<repository.png, id=102, 670.75594pt x 150.5625pt>
+File: repository.png Graphic file (type png)
+<use repository.png>
+Package pdftex.def Info: repository.png  used on input line 719.
+(pdftex.def)             Requested size: 426.78502pt x 95.79909pt.
+
+Overfull \hbox (14.22005pt too wide) in paragraph at lines 719--721
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./model.png>]
+<controller.png, id=106, 654.94687pt x 506.6428pt>
+File: controller.png Graphic file (type png)
+<use controller.png>
+Package pdftex.def Info: controller.png  used on input line 736.
+(pdftex.def)             Requested size: 367.8171pt x 284.52977pt.
+<vue.js-api.png, id=107, 421.575pt x 227.34938pt>
+File: vue.js-api.png Graphic file (type png)
+<use vue.js-api.png>
+Package pdftex.def Info: vue.js-api.png  used on input line 747.
+(pdftex.def)             Requested size: 284.53154pt x 153.44379pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25 <./repository.png> <./controller.png>]
+<vue.js-component.png, id=113, 830.35219pt x 330.48468pt>
+File: vue.js-component.png Graphic file (type png)
+<use vue.js-component.png>
+Package pdftex.def Info: vue.js-component.png  used on input line 760.
+(pdftex.def)             Requested size: 426.7936pt x 169.86617pt.
+
+Overfull \hbox (14.22862pt too wide) in paragraph at lines 760--762
+ [][] 
+ []
+
+[26 <./vue.js-api.png> <./vue.js-component.png>]
+Poglavlje 5.
+<competition-add.png, id=119, 1073.51062pt x 669.2503pt>
+File: competition-add.png Graphic file (type png)
+<use competition-add.png>
+Package pdftex.def Info: competition-add.png  used on input line 786.
+(pdftex.def)             Requested size: 426.79214pt x 266.07169pt.
+
+Overfull \hbox (14.22717pt too wide) in paragraph at lines 786--788
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<competition-details.png, id=120, 714.41907pt x 456.20438pt>
+File: competition-details.png Graphic file (type png)
+<use competition-details.png>
+Package pdftex.def Info: competition-details.png  used on input line 794.
+(pdftex.def)             Requested size: 284.53073pt x 181.6919pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<competition-form.png, id=121, 633.11531pt x 508.14844pt>
+File: competition-form.png Graphic file (type png)
+<use competition-form.png>
+Package pdftex.def Info: competition-form.png  used on input line 805.
+(pdftex.def)             Requested size: 283.59508pt x 227.61792pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27
 
 ]
-Poglavlje 5.
-(zavrsni.bbl [6
+<qualified-athletes.png, id=126, 834.11626pt x 600.74437pt>
+File: qualified-athletes.png Graphic file (type png)
+<use qualified-athletes.png>
+Package pdftex.def Info: qualified-athletes.png  used on input line 817.
+(pdftex.def)             Requested size: 395.06386pt x 284.53154pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28 <./competition-add.png> <./competition-details.png>]
+<swimmers.png, id=132, 359.09157pt x 230.36063pt>
+File: swimmers.png Graphic file (type png)
+<use swimmers.png>
+Package pdftex.def Info: swimmers.png  used on input line 829.
+(pdftex.def)             Requested size: 227.6261pt x 146.02428pt.
+ [29 <./competition-form.png> <./qualified-athletes.png>]
+<swimmers-page.png, id=138, 529.98pt x 356.83313pt>
+File: swimmers-page.png Graphic file (type png)
+<use swimmers-page.png>
+Package pdftex.def Info: swimmers-page.png  used on input line 837.
+(pdftex.def)             Requested size: 341.43416pt x 229.88608pt.
+<pool.png, id=139, 708.39656pt x 691.83469pt>
+File: pool.png Graphic file (type png)
+<use pool.png>
+Package pdftex.def Info: pool.png  used on input line 848.
+(pdftex.def)             Requested size: 341.44249pt x 333.45978pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<world-records.png, id=140, 709.90219pt x 664.73344pt>
+File: world-records.png Graphic file (type png)
+<use world-records.png>
+Package pdftex.def Info: world-records.png  used on input line 859.
+(pdftex.def)             Requested size: 303.86546pt x 284.53151pt.
+[30 <./swimmers.png> <./swimmers-page.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31 <./pool.png>] [32 <./world-records.png>]
+Poglavlje 6.
+(zavrsni.bbl [33
 
 ]
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [7
+) [34
 
-] [8] (zavrsni.aux) ) 
+] [35] (zavrsni.aux) ) 
 Here is how much of TeX's memory you used:
- 7055 strings out of 476410
- 117316 string characters out of 5784358
- 1855845 words of memory out of 5000000
- 27306 multiletter control sequences out of 15000+600000
- 564957 words of font info for 94 fonts, out of 8000000 for 9000
+ 9329 strings out of 476410
+ 150452 string characters out of 5784358
+ 2063845 words of memory out of 5000000
+ 29520 multiletter control sequences out of 15000+600000
+ 579109 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,77p,321b,241s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on zavrsni.pdf (11 pages, 70421 bytes).
+ 72i,8n,77p,436b,1850s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on zavrsni.pdf (39 pages, 2393610 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 205 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
