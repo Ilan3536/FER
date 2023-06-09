@@ -289,13 +289,13 @@ INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\am
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT .\usecase2.jpg
-INPUT .\usecase2.jpg
-INPUT usecase2.jpg
-INPUT .\usecase2.jpg
-INPUT .\usecase2.jpg
-INPUT .\usecase2.jpg
-INPUT .\usecase2.jpg
+INPUT .\usecasefinal.drawio.png
+INPUT .\usecasefinal.drawio.png
+INPUT usecasefinal.drawio.png
+INPUT .\usecasefinal.drawio.png
+INPUT .\usecasefinal.drawio.png
+INPUT .\usecasefinal.drawio.png
+INPUT .\usecasefinal.drawio.png
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
@@ -432,10 +432,10 @@ INPUT .\world-records.png
 INPUT .\world-records.png
 INPUT .\world-records.png
 INPUT .\world-records.png
-INPUT .\zavrsni.bbl
-INPUT zavrsni.bbl
-INPUT .\zavrsni.bbl
-INPUT zavrsni.bbl
+INPUT .\zavrsni.lof
+INPUT zavrsni.lof
+INPUT zavrsni.lof
+OUTPUT zavrsni.lof
 INPUT zavrsni.aux
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb

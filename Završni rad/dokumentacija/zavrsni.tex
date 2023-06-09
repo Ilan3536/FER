@@ -55,20 +55,20 @@ analizirati i pratiti postignuća plivača na temelju plivačkih rezultata.
 
 Za izgradnju ovakvog sustava bitne su dvije stvari. Prvo se treba definirati
 dobro strukturirana i skalabilna baza podataka u koju će se pohranjivati svi podaci.
-Druga bitna stvar je oblikvanje preglednog i jednostavnog korisničkog sučelja koje će
+Druga bitna stvar je oblikovanje preglednog i jednostavnog korisničkog sučelja koje će
 korisnicima omogućiti ugodan pristup podacima.
 
 \vspace{\baselineskip}
 
 U prvom dijelu rada navedena je specifikacija zahtjeva koje sustav treba ispuniti i njihova analiza.
-U drugom dijelu detaljno je opisano oblikavanje i struktura baze podataka. U trećem dijelu opisana je interna 
-implementacija web aplikacije te upute za korisnika.
+U drugom dijelu detaljno je opisano oblikovanje i struktura baze podataka. U trećem dijelu opisana je unutarnja 
+implementacija web aplikacije, a u četvrtkom dijelu su priložene upute za korisnika.
 
 \chapter{Specifikacija zahtjeva}
 
-\section{Analiza zahjteva}
-Na početku izrade ovakvog sustava potrebno je definirati korisnike i njihove zahjteve koje će sustav omogućavati.
-Primarni i jedini korisnik sustava je posjtetitelj koji pregledava podatke o plivačkim aktivnostima.
+\section{Analiza zahtjeva}
+Na početku izrade ovakvog sustava potrebno je definirati korisnike i njihove zahtjeve koje će sustav omogućavati.
+Primarni i jedini korisnik sustava je posjetitelj koji pregledava podatke o plivačkim aktivnostima.
 
 \noindent Osnovni zahtjev posjetitelja je pregled i pretraživanje podataka o:
 \begin{itemize}
@@ -97,7 +97,7 @@ vanjsko ponašanje prema korisniku (pogled interakcije). Na slici \ref{fig:use-c
 \begin{figure}[htb]
     \centering
     \hspace*{-2.5cm}
-    \includegraphics[width=\dimexpr\paperwidth-2cm,height=\paperheight,keepaspectratio]{usecase2.jpg}
+    \includegraphics[width=\dimexpr\paperwidth-2cm,height=\paperheight,keepaspectratio]{usecasefinal.drawio.png}
     \centering
     \caption{Dijagram obazaca uporabe}
     \label{fig:use-case}
@@ -152,7 +152,7 @@ vanjsko ponašanje prema korisniku (pogled interakcije). Na slici \ref{fig:use-c
         \item[$\bullet$] \textbf{Preduvjeti:} Uspostavljena veza s internetom, podaci upisani u bazu, poslužitelj dostupan.
         \item[$\bullet$] \textbf{Željeni scenarij:} Pritiskom na gumb s plusom, prikazuje se obrazac za dodavanje novog natjecanja. Korisnik popunjava podatke
         o novom natjecanju. Korisnik odabire opciju \textit{Save}. Novo natjecanje se prikazuje na popisu svih natjecanja
-        \item[$\bullet$] \textbf{Mogući ostali scenariji:} Uneseni podaci su neispravni ili uneseni u nesipravnom formatu. 
+        \item[$\bullet$] \textbf{Mogući ostali scenariji:} Uneseni podaci su neispravni ili uneseni u neispravnom formatu. 
         Korisniku se prikazuje poruka o greški prilikom validacije
     \end{itemize}
 
@@ -164,7 +164,7 @@ vanjsko ponašanje prema korisniku (pogled interakcije). Na slici \ref{fig:use-c
         \item[$\bullet$] \textbf{Ostali sudionici:} Baza podataka.
         \item[$\bullet$] \textbf{Preduvjeti:} Uspostavljena veza s internetom, podaci upisani u bazu, poslužitelj dostupan.
         \item[$\bullet$] \textbf{Željeni scenarij:} Pritiskom na ikonu s dokumentom na kartici odabranom natjecanja korisnika se preusmjerava na stranicu o odabranom
-        natjecanju. Korisniku se prikazuju podaci o odabranom natjecanju i popis održanih disicplina.
+        natjecanju. Korisniku se prikazuju podaci o odabranom natjecanju i popis održanih disciplina.
         \item[$\bullet$] \textbf{Mogući ostali scenariji:} Rezultati natjecanja nisu uneseni u bazu, ne prikazuju se korisniku.
     \end{itemize}
 
@@ -187,7 +187,7 @@ vanjsko ponašanje prema korisniku (pogled interakcije). Na slici \ref{fig:use-c
         \item[$\bullet$] \textbf{Cilj:} Pregledati sve kvalificirane plivače za Državno PH 2023.
         \item[$\bullet$] \textbf{Ostali sudionici:} Baza podataka.
         \item[$\bullet$] \textbf{Preduvjeti:} Uspostavljena veza s internetom, podaci upisani u bazu, poslužitelj dostupan.
-        \item[$\bullet$] \textbf{Željeni scenarij:} Korisnik odabre karticu s prikazom kvalificiranih plivača za Državno PH. Korisniku se prikazuje
+        \item[$\bullet$] \textbf{Željeni scenarij:} Korisnik odabire karticu s prikazom kvalificiranih plivača za Državno PH. Korisniku se prikazuje
         lista svih plivača koji su otplivali zadane limite.
         \item[$\bullet$] \textbf{Mogući ostali scenariji:} Limiti ili plivači nisu uneseni u bazu, ne prikazuju se korisniku.
     \end{itemize}
@@ -210,8 +210,8 @@ vanjsko ponašanje prema korisniku (pogled interakcije). Na slici \ref{fig:use-c
         \item[$\bullet$] \textbf{Cilj:} Pregledati limiti po disciplinama.
         \item[$\bullet$] \textbf{Ostali sudionici:} Baza podataka.
         \item[$\bullet$] \textbf{Preduvjeti:} Uspostavljena veza s internetom, podaci upisani u bazu, poslužitelj dostupan.
-        \item[$\bullet$] \textbf{Željeni scenarij:} Korisniki se pritiskom na gumb \textit{Qualifying Standards} na dnu stranicu prikazuje
-        popis svih limita u dvije liste: jedna prikazuje limite u muškoj kategoriji, a druga limite u ženoskoj kategoriji.
+        \item[$\bullet$] \textbf{Željeni scenarij:} Korisnik se pritiskom na gumb \textit{Qualifying Standards} na dnu stranicu prikazuje
+        popis svih limita u dvije liste: jedna prikazuje limite u muškoj kategoriji, a druga limite u ženskoj kategoriji.
         \item[$\bullet$] \textbf{Mogući ostali scenariji:} Podaci nisu uneseni u bazu, ne prikazuju se korisniku.
     \end{itemize}
 
@@ -223,7 +223,7 @@ vanjsko ponašanje prema korisniku (pogled interakcije). Na slici \ref{fig:use-c
         \item[$\bullet$] \textbf{Ostali sudionici:} Baza podataka.
         \item[$\bullet$] \textbf{Preduvjeti:} Uspostavljena veza s internetom, podaci upisani u bazu, poslužitelj dostupan.
         \item[$\bullet$] \textbf{Željeni scenarij:} Korisnik odabire stranicu s prikazom polja za pretraživanje plivača. Korisniku unosi puno
-        ime i prezime željenog plivača i odabire opciju prikaza pritiskom na gumb \textit{Search}. Korisniku se prikazuje starnica s prikazom detalja o
+        ime i prezime željenog plivača i odabire opciju prikaza pritiskom na gumb \textit{Search}. Korisniku se prikazuje stranica s prikazom detalja o
         željenom plivaču.
         \item[$\bullet$] \textbf{Mogući ostali scenariji:} 
         \begin{enumerate}
@@ -236,7 +236,7 @@ vanjsko ponašanje prema korisniku (pogled interakcije). Na slici \ref{fig:use-c
     \item Pretraži podatke o registriranom plivaču
     \begin{itemize}
         \item[$\bullet$] \textbf{Glavni sudionik:} Korisnik.
-        \item[$\bullet$] \textbf{Cilj:} Pregledati inforamcije o registriranom plivaču
+        \item[$\bullet$] \textbf{Cilj:} Pregledati informacije o registriranom plivaču
         \item[$\bullet$] \textbf{Ostali sudionici:} Baza podataka.
         \item[$\bullet$] \textbf{Preduvjeti:} Uspostavljena veza s internetom, podaci upisani u bazu, poslužitelj dostupan. 
         Korisnik je unio ispravno ime i prezime plivača na stranici za pretraživanje registriranih plivača.
@@ -274,7 +274,7 @@ vanjsko ponašanje prema korisniku (pogled interakcije). Na slici \ref{fig:use-c
         \item[$\bullet$] \textbf{Preduvjeti:} Uspostavljena veza s internetom, podaci upisani u bazu, poslužitelj dostupan
         \item[$\bullet$] \textbf{Željeni scenarij:} Korisnik odabire stranicu s prikazom svjetskih rekorda. Korisniku se prikazuju trenutni svjetski rekordi
         u pojedinoj disciplini u muškoj i ženskoj kategoriji.
-        \item[$\bullet$] \textbf{Mogući ostali scenariji:} Podaci o svjtskim rekordima nisu uneseni u bazu, ne prikazuju se korisniku.
+        \item[$\bullet$] \textbf{Mogući ostali scenariji:} Podaci o svjetskim rekordima nisu uneseni u bazu, ne prikazuju se korisniku.
     \end{itemize}
 
 \end{enumerate}
@@ -338,9 +338,8 @@ za nastup na Državnom PH 2023. ER model je prikazan na slici \ref*{fig:ER model
 
 \subsection{Popis entiteta i atributa}
 
-\vspace{\baselineskip}
 
-\textbf{OSOBA} - \underline{idosoba}, imeosoba, prezimeosoba, spol, datumrodjenja, visina, tezina, \dashuline{idklub}, \dashuline{iddrzava}
+\hspace*{0.6cm}\textbf{OSOBA} - \underline{idosoba}, imeosoba, prezimeosoba, spol, datumrodjenja, visina, tezina, \dashuline{idklub}, \dashuline{iddrzava}
 
 \vspace{\baselineskip}
 
@@ -381,9 +380,7 @@ Napomena: Primarni ključevi podvučeni su punom linijom.
 
 \subsection{Popis veza}
 
-\vspace{\baselineskip}
-
-\textbf{jeOtplivao} - \underline{idrezultat}, idosoba
+\hspace*{0.6cm}\textbf{jeOtplivao} - \underline{idrezultat}, idosoba
 
 \vspace{\baselineskip}
 
@@ -443,7 +440,7 @@ Relacijski model sastoji se od navedenih relacija:
 \begin{itemize}
     \item[$\bullet$] \textbf{OSOBA} - \underline{idosoba}, imeosoba, prezimeosoba, spol, datumrodjenja, visina, tezina, 
     \dashuline{idklub}, \dashuline{iddrzava} \\
-    Relacija 'Osoba' sadrži primarni ključ koji jednoznačno identificira svaku osobu. U relaciju se uz idosobe spremaju: ime osobe, prezime osobe,
+    Relacija 'Osoba' sadrži primarni ključ koji jednoznačno identificira svaku osobu. U relaciju se uz 'idosoba' spremaju: ime osobe, prezime osobe,
     spol, datum rođenja, visina i težina. Atribut 'idklub' je strani ključ koji referencira relaciju 'Klub' te predstavlja klub za koji plivač nastupa.
     Atribut 'iddrzava' je strani ključ koji referencira relaciju 'Država' te predstavlja državu koju plivač predstavlja na natjecanjima.
     
@@ -453,15 +450,15 @@ Relacijski model sastoji se od navedenih relacija:
     \dashuline{iddisciplina}, \dashuline{idnatjecanje}, \dashuline{idosoba} \\
     Relacija 'Rezultat' sadrži primarni ključ koji jednoznačno identificira svaki rezultat pohranjen u bazi. U relaciju se spremaju vrijeme rezultata, 
     bodovi (izračunati u odnosu na svjetski rekord), datum na koji je rezultat isplivan. Relacija sadrži tri strana ključa. Atribut 'idosoba' je strani ključ
-    koj referencira relaciju 'Osoba' i predstavlja osobu koja je isplivala rezultat. Atribut 'iddisciplina' je strani ključ
-    koj referencira relaciju 'Disciplina' i predstavlja disciplinu u kojoj je rezultat isplivan. Atribut 'idnatjecanje' je strani ključ
-    koj referencira relaciju 'Natjecanje' i predstavlja natjecanje na kojem je rezultat isplivan.
+    koji referencira relaciju 'Osoba' i predstavlja osobu koja je isplivala rezultat. Atribut 'iddisciplina' je strani ključ
+    koji referencira relaciju 'Disciplina' i predstavlja disciplinu u kojoj je rezultat isplivan. Atribut 'idnatjecanje' je strani ključ
+    koji referencira relaciju 'Natjecanje' i predstavlja natjecanje na kojem je rezultat isplivan.
 
 \vspace{\baselineskip}
 
     \item[$\bullet$] \textbf{NATJECANJE} - \underline{idnatjecanje}, nazivnatjecanje, vrstanatjecanje, datumod, datumdo, \dashuline{idbazen} \\
     Relacija 'Natjecanje' sadrži primarni ključ 'idnatjecanje' koji jednoznačno identificira svako natjecanje. Ostali atributi u relaciji su naziv natjecanja, 
-    vrsta natjecanja - koja se odnosi na olimpijske igre, svjetsko prventsvo,...Uz ove atribute bilježi si datum početka i datum završetka natjecnaja.
+    vrsta natjecanja - koja se odnosi na olimpijske igre, svjetsko prvenstvo i sl.Uz ove atribute bilježi se datum početka i datum završetka natjecanja.
     Atribut 'idbazen' je strani ključ koji referencira relaciju 'Bazen' i predstavlja bazen na kojem se natjecanje održava.
 
 \vspace{\baselineskip}
@@ -509,8 +506,8 @@ Napomena: Primarni ključevi podvučeni su punom linijom, \\
 
 \begin{figure}[htb]
     \centering
-    \hspace*{-2.5cm}
-    \includegraphics[width=\dimexpr\paperwidth-5cm,height=\paperheight-5cm,keepaspectratio]{Relacijski model.png}
+    \hspace*{-1cm}
+    \includegraphics[width=18cm,height=20cm,keepaspectratio]{Relacijski model.png}
     \centering
     \caption{Relacijski model baze podataka}
     \label{fig:relacijski model}
@@ -568,11 +565,11 @@ U nastavku slijede neke od INSERT SQL naredbi za popunjavanje baze podataka poda
     INSERT INTO osoba (idosoba, iddrzava, imeosoba, prezimeosoba, spol, datumrodjenja, visina, tezina)
     VALUES 
     ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Leo',  'Sudar', 'M', '1998-02-21', 182, 81, 4),
-    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Ivano',  'Petrovi', 'M', '1995-11-14', 185, 98, 9),
-    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Lovro',  'Tomi', 'M', '1998-09-09', 168, 89, 1),
-    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Nino',  'Lovri', 'M', '1992-06-27', 170, 91, 9),
-    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Marko',  'Radi', 'M', '2000-09-24', 177, 82, 6),
-    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Dario',  'Peri', 'M', '2004-11-29', 181, 91, 9),
+    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Ivano',  'Petrovic', 'M', '1995-11-14', 185, 98, 9),
+    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Lovro',  'Tomic', 'M', '1998-09-09', 168, 89, 1),
+    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Nino',  'Lovric', 'M', '1992-06-27', 170, 91, 9),
+    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Marko',  'Radic', 'M', '2000-09-24', 177, 82, 6),
+    ( (SELECT iddrzava FROM drzava WHERE nazivdrzava = 'Croatia'), 'Dario',  'Peric', 'M', '2004-11-29', 181, 91, 9),
 
 
     INSERT INTO rezultat (idrezultat, vrijeme, bodovi, datum, iddisciplina, idnatjecanje, idosoba)
@@ -605,7 +602,7 @@ U nastavku slijede neke od INSERT SQL naredbi za popunjavanje baze podataka poda
 
 \subsection{Java Spring i JPA}
 Java Spring je popularni okvir za razvoj web aplikacija koji olakšava izgradnju pouzdanih i skalabilnih aplikacija. 
-Koristeći koncepte poput inversije upravljanja i ubrizgavanja ovisnosti, programeri mogu efikasno razvijati i testirati aplikacije. 
+Koristeći koncepte poput inverzije upravljanja i ubrizgavanja ovisnosti, programeri mogu efikasno razvijati i testirati aplikacije. 
 JPA (Java Persistence API) je standardna Java specifikacija koja omogućava upravljanje podacima u bazama podataka. 
 Kombinacija Springa i JPA-e olakšava mapiranje Java objekata na bazu podataka i izvršavanje osnovnih operacija nad podacima.
 
@@ -709,7 +706,7 @@ Sloj podataka sastoji se od dva dijela: razred Model (ili Entitet) i sučelje Re
     \end{figure}
 
     \item[$\textbf2.$] \textbf{Repozitorij} \\
-    Za svaki entitet definira se sučelje Repository koje nasljeđuje sučelje JpaRepository te time naasljeđuje i metode za dohvat
+    Za svaki entitet definira se sučelje Repository koje nasljeđuje sučelje JpaRepository te time nasljeđuje i metode za dohvat
     podataka iz baze. JPA omogućuje pisanje SQL upita za dohvat podataka koristeći jednostavnu metodu imenovanja kojom u imenu metode
     definiramo po kojim atributima želimo da se upit vrši. Npr. Ako želimo dohvatiti natjecanje prema jedinstvenom 'idnatjecanje' 
     jednostavno definiramo metodu List<Natjecanje> findByIdnatjecanje(Long idnatjecanje) (prikazano na slici \ref{fig:repository}) koju koristimo u Kontroleru. 
@@ -739,7 +736,7 @@ koje se nalaze svaka na svojoj putanji.
     \label{fig:controller}
 \end{figure}
 
-Drugi dio poslovne logike je ostvaren u Vue.js-u u JavaScriptu pomoću kojega se komunicira s kontrolerima na poslužiteljskoj strani.
+Drugi dio poslovne logike je ostvaren u Vue.js JavaScriptu pomoću kojega se komunicira s kontrolerima na poslužiteljskoj strani.
 Na slici \ref{fig:vue.js-api} je prikazan isječak koda u kojem se dohvaćaju podaci iz baze podataka na klijentsku stranu. 
 
 \begin{figure}[!h]
@@ -753,7 +750,7 @@ Na slici \ref{fig:vue.js-api} je prikazan isječak koda u kojem se dohvaćaju po
 \subsection{Sloj korisničkog sučelja}
 Ovo je sloj koji komunicira s korisnikom. Korisnik ne mora znati ništa o sloju podataka, niti o sloju poslovne logike da bi uspješno
 koristio aplikaciju. Korisničko sučelje je izvedeno pomoću JavaScript radnog okvira Vue.js te se za gotove komponente i stilizacijske
-elemenate koristi Vuetify biblioteka. Na slici \ref{fig:vue.js-component} je prikazan isječak koda jedne komponente za prikaz podataka korisnicima.
+elemente koristi Vuetify biblioteka. Na slici \ref{fig:vue.js-component} je prikazan isječak koda jedne komponente za prikaz podataka korisnicima.
 
 \begin{figure}[!h]
     \centering
@@ -822,7 +819,7 @@ Na dnu stranice pritiskom na gumb (slika \ref{fig:qualified-athletes}). Limiti p
 
 \subsection{Plivači}
 Odabirom kartice plivači prikazuje se polje za unos teksta u koje korisnik treba unijeti ime traženog plivača (slika \ref{fig:swimmers}).
-Pritiskom na gumb Traži otvara se starnica sa detaljima o traženom plivaču i njegovim najboljim rezultatima (slika \ref{fig:swimmers-page}).
+Pritiskom na gumb Traži otvara se stranica s detaljima o traženom plivaču i njegovim najboljim rezultatima (slika \ref{fig:swimmers-page}).
 
 \begin{figure}[!h]
     \centering
@@ -856,14 +853,14 @@ Odabirom kartice Svjetski rekordi prikazuje se popis svjetskih rekorda u pojedin
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=15cm, height=10cm, keepaspectratio]{world-records.png}
+    \includegraphics[width=15cm, height=15cm, keepaspectratio]{world-records.png}
     \centering
     \caption{Kartica s prikazom svjetskih rekorda}
     \label{fig:world-records}
 \end{figure}
 
 \chapter{Zaključak}
-Web aplikacija za praćenje plivačkih rezultata i pregledavnje podataka o plivačkim natjecanjima uspješno je ostvarena
+Web aplikacija za praćenje plivačkih rezultata i pregledavanje podataka o plivačkim natjecanjima uspješno je ostvarena
 uporabom navedenih alata i tehnologija. Ova aplikacija je intuitivna za korištenjem sadašnjim, bivšim ili budućim
 plivačima, ali i ljubiteljima plivanja. Ostvareno je jednostavno korisničko sučelje za prikaz navedenih podataka.
 
@@ -875,33 +872,99 @@ razvoj web aplikacije.
 \vspace{\baselineskip}
 
 Aplikacije bi se mogla unaprijediti dodavanjem različitih korisnika i trenera koji bi mogli mijenjati i unositi podatke.
-Također bi se mogla dodati opcija usporedbe dvaju plivača na temelju njihovih rezultata ili graf prikaza napreetka
-plivača kroz godine. Takve opcije bi omogćile plivačima da prate svoj napredak i imaju uvid u sve svoje rezultate.
+Također bi se mogla dodati opcija usporedbe dvaju plivača na temelju njihovih rezultata ili graf prikaza napretka
+plivača kroz godine. Takve opcije bi omogućile plivačima da prate svoj napredak i imaju uvid u sve svoje rezultate.
 
 \vspace{\baselineskip}
 
 Rad na projektu mi se svidio jer je ovo prva veća aplikacija koju sam samostalno izradio. Izrada se pokazala kao vrlo
-poučno iskustvo jer sam usavršio vec poznate tehnologije i naučio nove koje ću moći primjenjivati u budućimm projektima.
-Smatram da je znanje stečeno u izradi praktičnog proizvoda korisnije od teorijskog znanja te se osjećam samopuzdanije u svoje
+poučno iskustvo jer sam usavršio vec poznate tehnologije i naučio nove koje ću moći primjenjivati u budućim projektima.
+Smatram da je znanje stečeno u izradi praktičnog proizvoda korisnije od teorijskog znanja te se osjećam samopouzdanije u svoje
 programerske sposobnosti. 
 
-\citation{oetiket2007lshort}
 
-\bibliography{literatura}
+
 \bibliographystyle{fer}
 
-\begin{sazetak}
-Sažetak na hrvatskom jeziku.
+\begin{thebibliography}{19}
+    \providecommand{\natexlab}[1]{#1}
+    \providecommand{\url}[1]{\texttt{#1}}
+    \expandafter\ifx\csname urlstyle\endcsname\relax
+      \providecommand{\doi}[1]{doi: #1}\else
+      \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\kljucnerijeci{Ključne riječi, odvojene zarezima.}
+      \bibitem[Fer()]{FER}
+      \emph{FER: Baze podataka, Predavanja, 2022.}.
+      \newblock
+
+      \bibitem[Fer2()]{FER2}
+      \emph{FER: Programsko inženjerstvo, Predavanja, 2022.}.
+      \newblock
+
+      \bibitem[Dra()]{Drawio}
+      \emph{Draw.io alat za crtanje dijagrama obazaca uporabe}.
+      \newblock URL \url{https://app.diagrams.net/}.
+
+      \bibitem[Vue()]{Vuetify}
+      \emph{Vuetify UI bibilioteka}.
+      \newblock URL \url{https://vuetifyjs.com/en/}.
+
+      \bibitem[DBe()]{DBeaver}
+      \emph{DBeaver user guide}.
+      \newblock URL \url{https://dbeaver.com/doc/dbeaver.pdf}.
+
+      \bibitem[Pos()]{PostgreSQL}
+      \emph{PostgreSQL documentation}.
+      \newblock URL \url{https://www.postgresql.org/docs/}.
+
+      \bibitem[Jav()]{javatpoint}
+      \emph{Java Spring tutorial}.
+      \newblock URL \url{https://www.javatpoint.com/spring-tutorial}.
+
+      \bibitem[Mvc()]{mvc}
+      \emph{MVC framework introduction - tutorialspoint}.
+      \newblock URL \url{https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm}.
+
+      \bibitem[cha()]{chart}
+      \emph{Vue-js 3 - chart components}.
+      \newblock URL \url{https://vue-chart-3.netlify.app/}.
+    
+\end{thebibliography}
+
+\listoffigures
+
+
+\begin{sazetak}
+Baza podataka i web-aplikacija za plivačka natjecanja služi za pohranu plivačkih rezultata i podataka o plivačima.
+U uvodu je opisana glavna motivacija za izradu ovakve aplikacije. Kroz specifikaciju zahtjeva i opis obrazaca
+uporabe opisane su glavne značajke sustava, i koje korisničke zahtjeve sustav mora ispuniti. 
+
+Oblikovanje sustava odvojeno je u dva dijela: izrada baze podataka i izrada web-aplikacije. Prije početka pisanja
+koda bilo je potrebno zamisliti što je sve potrebno u bazi podataka, te misli preusmjeriti na ER model i relacijski model.
+Koristeći PostgreSQL sustav za baze podataka, modeli su pretvoreni u realizaciju. Drugi dio oblikovanja sustava sastojao se od
+oblikovanja poslužiteljske strane u Java Springu, koja izravno komunicira s bazom, te klijentske strane, koja predstavlja korisničko
+sučelje. 
+
+\kljucnerijeci{Plivanje, specifikacija zahtjeva, PostgreSQL, baza podataka, Java Spring, klijent, poslužitelj}
 \end{sazetak}
 
-% TODO: Navedite naslov na engleskom jeziku.
-\engtitle{Title}
-\begin{abstract}
-Abstract.
+\clearpage
 
-\keywords{Keywords.}
+\engtitle{Database and web application for swimming competitions}
+
+\begin{abstract}
+Database and web application for swimming competitions is used for storing swimming results and data about swimmers.
+The main motivation for implementing such an application. Throughout use of system requirements and use case 
+description the main, features of the system are outlined, as well as user requirements which system must meet.
+
+System design is separated in two parts: database implementation and web application development.
+Before starting the coding process, it was necessary to think about database requirements and then 
+use that requirements to model ER model and relational model. Using PostgreSQL system for databases, models
+were made into existence. Second part of implementation involved using Java Spring to shape the server side,
+which communicated directly with the database, and client side, which represents user interface.
+
+
+\keywords{Swimming, case specification, PostgreSQL, database, Java Spring, client, server}
 \end{abstract}
 
 \end{document}

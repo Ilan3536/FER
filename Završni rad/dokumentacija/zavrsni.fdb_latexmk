@@ -1,14 +1,6 @@
 # Fdb version 4
-["bibtex zavrsni"] 1686264054 "zavrsni.aux" "zavrsni.bbl" "zavrsni" 1686264076 0
-  "./fer.bst" 1284151297 26009 c9fe7ac62e814ee4c7bb7b0cdf6bf7a5 ""
-  "./literatura.bib" 1268922119 694 14ef1ef6963dccc1171f34d0309bf39f ""
-  "zavrsni.aux" 1686264075 7704 288a7e627220a613c475d8d8c139e894 "pdflatex"
-  (generated)
-  "zavrsni.bbl"
-  "zavrsni.blg"
-  (rewritten before read)
-["pdflatex"] 1686264073 "c:/FER/git_repo_FER/FER/Završni rad/dokumentacija/zavrsni.tex" "zavrsni.pdf" "zavrsni" 1686264076 0
-  "C:/Users/Ilan Vezmarovic/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1686242761 82507 a9eef8696c92627b87e9975edea03b2a ""
+["pdflatex"] 1686303778 "c:/FER/git_repo_FER/FER/Završni rad/dokumentacija/zavrsni.tex" "zavrsni.pdf" "zavrsni" 1686303780 0
+  "C:/Users/Ilan Vezmarovic/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1686299154 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Ilan Vezmarovic/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1686166673 23190311 847d81985a5015782be6efbc335e70ff ""
   "C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/courier/pcrb8r.tfm" 1136765053 1292 3059476c50a24578715759f22652f3d0 ""
@@ -119,7 +111,7 @@
   "C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "ER model.png" 1686161531 68065 f52fbb34039db466ed1b4e9427192640 ""
   "Relacijski model.png" 1686161030 39741 0784259bf2c49c85337de11580abc69f ""
-  "c:/FER/git_repo_FER/FER/Završni rad/dokumentacija/zavrsni.tex" 1686264072 42477 c7cd6df139f1a506cbac795708fa1e77 ""
+  "c:/FER/git_repo_FER/FER/Završni rad/dokumentacija/zavrsni.tex" 1686303777 45740 26ed9be5453a9c907837ffdb00e1deeb ""
   "competition-add.png" 1686259638 873636 366a88340ced2dcfe095dd87eef67cc7 ""
   "competition-details.png" 1686259850 34184 1761c4727867899cd276d586943173bd ""
   "competition-form.png" 1686260654 64136 e7d535d5edd3c7d4f0c7f29050ec6bbf ""
@@ -131,16 +123,17 @@
   "repository.png" 1686250165 22600 7ca7ad0426dcc914a2110f60ab1b4b12 ""
   "swimmers-page.png" 1686261439 28679 226e4ffe3fd91c83843346acd8b093eb ""
   "swimmers.png" 1686260147 9289 6497b0f9104d82fd0b411e5231889433 ""
-  "usecase2.jpg" 1686209323 100983 ca5a4d94a50618ef3f3b9d9b9ef57f20 ""
+  "usecasefinal.drawio.png" 1686301951 116200 69aa2a367455342aed019ecb3bf03fb3 ""
   "vue.js-api.png" 1686250315 22314 b3c87079b45cc448993f20104299fd00 ""
   "vue.js-component.png" 1686250281 37298 328771f0fdacb3edd013646229e997d8 ""
   "world-records.png" 1686260834 74290 fbbfa82b1e2ff563e8aff0476c323132 ""
-  "zavrsni.aux" 1686264075 7704 288a7e627220a613c475d8d8c139e894 "pdflatex"
-  "zavrsni.bbl" 1686264054 283 de5ffaf5b665b622658d80bed97ba2a5 "bibtex zavrsni"
-  "zavrsni.tex" 1686264072 42477 c7cd6df139f1a506cbac795708fa1e77 ""
-  "zavrsni.toc" 1686264075 2542 5f18da81d351db79167b0c43fd24dad1 "pdflatex"
+  "zavrsni.aux" 1686303780 8085 2dd018e55d8fe8e649044d9f8425029d "pdflatex"
+  "zavrsni.lof" 1686303780 1881 dfa2171d37522436f4e0055ffeccdb1c "pdflatex"
+  "zavrsni.tex" 1686303777 45740 26ed9be5453a9c907837ffdb00e1deeb ""
+  "zavrsni.toc" 1686303780 2586 8b3f23119cb18ba90055b636e2f8396c "pdflatex"
   (generated)
   "zavrsni.aux"
+  "zavrsni.lof"
   "zavrsni.log"
   "zavrsni.pdf"
   "zavrsni.toc"

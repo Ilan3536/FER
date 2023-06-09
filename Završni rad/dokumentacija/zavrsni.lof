@@ -1,0 +1,23 @@
+\babel@toc {croatian}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Dijagram obazaca uporabe\relax }}{3}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces ER model baze podataka\relax }}{12}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Relacijski model baze podataka\relax }}{20}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Razred Natjecanje - model\relax }}{24}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Sučelje NatjecanjeRepository - repozitorij\relax }}{25}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Razred NatjecanjeController - kontroler\relax }}{25}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Vue.js akcija za dohvat podataka sa servera\relax }}{26}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Vue.js komponenta za prikaza kartica natjecanja\relax }}{26}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Kartica s prikazom svih natjecanja\relax }}{28}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Kartica s prikazom detalja o odabranom natjecanju\relax }}{28}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Forma za dodavanje novog natjecanja\relax }}{29}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Kartica s prikazom kvalificiranih plivača i limita\relax }}{29}{}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Kartica za pretraživanje plivača\relax }}{30}{}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Kartica s prikazom detalja o plivaču\relax }}{30}{}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Kartica s prikazom svih bazena\relax }}{31}{}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Kartica s prikazom svjetskih rekorda\relax }}{32}{}%
+\addvspace {10\p@ }

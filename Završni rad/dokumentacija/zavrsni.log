@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.7)  9 JUN 2023 00:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.7)  9 JUN 2023 11:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -387,10 +387,10 @@ Poglavlje 1.
 
 ]
 Poglavlje 2.
-<usecase2.jpg, id=21, 829.0975pt x 762.85pt>
-File: usecase2.jpg Graphic file (type jpg)
-<use usecase2.jpg>
-Package pdftex.def Info: usecase2.jpg  used on input line 100.
+<usecasefinal.drawio.png, id=21, 829.0975pt x 762.85pt>
+File: usecasefinal.drawio.png Graphic file (type png)
+<use usecasefinal.drawio.png>
+Package pdftex.def Info: usecasefinal.drawio.png  used on input line 100.
 (pdftex.def)             Requested size: 540.61488pt x 497.41805pt.
 
 Overfull \hbox (59.19806pt too wide) in paragraph at lines 99--102
@@ -399,7 +399,7 @@ Overfull \hbox (59.19806pt too wide) in paragraph at lines 99--102
 
 [2
 
-] [3 <./usecase2.jpg>] [4
+] [3 <./usecasefinal.drawio.png>] [4
 
 ] [5] [6] [7] [8] [9]
 Poglavlje 3.
@@ -408,7 +408,7 @@ Poglavlje 3.
 ] [11
 
 ]
-<ER model.png, id=56, 1209.51875pt x 719.68875pt>
+<ER model.png, id=58, 1209.51875pt x 719.68875pt>
 File: ER model.png Graphic file (type png)
 <use ER model.png>
 Package pdftex.def Info: ER model.png  used on input line 333.
@@ -419,53 +419,53 @@ Overfull \hbox (56.90887pt too wide) in paragraph at lines 333--335
  []
 
 
-Overfull \hbox (5.90642pt too wide) in paragraph at lines 343--344
-\T1/ptm/b/n/12 OSOBA \T1/ptm/m/n/12 - $[]$, ime-osoba, pre-zi-me-osoba, spol, da-tu-mro-dje-nja, vi-sina, te-zina, |   [],
- []
-
-
-Overfull \hbox (4.55923pt too wide) in paragraph at lines 351--353
+Overfull \hbox (4.55923pt too wide) in paragraph at lines 350--352
 []\T1/ptm/b/n/12 NATJECANJE \T1/ptm/m/n/12 - $[]$, na-ziv-na-tje-ca-nje, vr-sta-na-tje-ca-nje, da-tu-mod, da-tumdo, 
  []
 
 [12
 
  <./ER model.png>] [13]
-Overfull \hbox (5.47256pt too wide) in paragraph at lines 444--449
+Overfull \hbox (5.47256pt too wide) in paragraph at lines 441--446
 \T1/ptm/m/n/12 Relacija 'Osoba' sa-drºi pri-marni klju£ koji jed-noz-na£no iden-ti-fi-cira svaku osobu.
  []
 
 [14]
-Overfull \hbox (3.35991pt too wide) in paragraph at lines 462--466
+Overfull \hbox (3.35991pt too wide) in paragraph at lines 459--463
 \T1/ptm/m/n/12 Relacija 'Na-tje-ca-nje' sa-drºi pri-marni klju£ 'id-na-tje-ca-nje' koji jed-noz-na£no iden-
  []
 
 [15]
-<Relacijski model.png, id=72, 744.7825pt x 959.585pt>
+<Relacijski model.png, id=73, 744.7825pt x 959.585pt>
 File: Relacijski model.png Graphic file (type png)
 <use Relacijski model.png>
-Package pdftex.def Info: Relacijski model.png  used on input line 513.
-(pdftex.def)             Requested size: 455.25992pt x 586.5613pt.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 522.
- (C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+Package pdftex.def Info: Relacijski model.png  used on input line 510.
+(pdftex.def)             Requested size: 441.6794pt x 569.06401pt.
+
+Overfull \hbox (2.94171pt too wide) in paragraph at lines 509--512
+ []|  [] 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 519.
+(C:\Users\Ilan Vezmarovic\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [16] [17] [18] [19] [20 <./Relacijski model.png (PNG copy)>]
 Poglavlje 4.
 [21
 
 ] [22] [23]
-<model.png, id=101, 384.83775pt x 370.38374pt>
+<model.png, id=102, 384.83775pt x 370.38374pt>
 File: model.png Graphic file (type png)
 <use model.png>
-Package pdftex.def Info: model.png  used on input line 705.
+Package pdftex.def Info: model.png  used on input line 702.
 (pdftex.def)             Requested size: 284.54059pt x 273.8536pt.
-<repository.png, id=102, 670.75594pt x 150.5625pt>
+<repository.png, id=103, 670.75594pt x 150.5625pt>
 File: repository.png Graphic file (type png)
 <use repository.png>
-Package pdftex.def Info: repository.png  used on input line 719.
+Package pdftex.def Info: repository.png  used on input line 716.
 (pdftex.def)             Requested size: 426.78502pt x 95.79909pt.
 
-Overfull \hbox (14.22005pt too wide) in paragraph at lines 719--721
+Overfull \hbox (14.22005pt too wide) in paragraph at lines 716--718
  [][] 
  []
 
@@ -473,58 +473,58 @@ Overfull \hbox (14.22005pt too wide) in paragraph at lines 719--721
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [24 <./model.png>]
-<controller.png, id=106, 654.94687pt x 506.6428pt>
+<controller.png, id=107, 654.94687pt x 506.6428pt>
 File: controller.png Graphic file (type png)
 <use controller.png>
-Package pdftex.def Info: controller.png  used on input line 736.
+Package pdftex.def Info: controller.png  used on input line 733.
 (pdftex.def)             Requested size: 367.8171pt x 284.52977pt.
-<vue.js-api.png, id=107, 421.575pt x 227.34938pt>
+<vue.js-api.png, id=108, 421.575pt x 227.34938pt>
 File: vue.js-api.png Graphic file (type png)
 <use vue.js-api.png>
-Package pdftex.def Info: vue.js-api.png  used on input line 747.
+Package pdftex.def Info: vue.js-api.png  used on input line 744.
 (pdftex.def)             Requested size: 284.53154pt x 153.44379pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25 <./repository.png> <./controller.png>]
-<vue.js-component.png, id=113, 830.35219pt x 330.48468pt>
+<vue.js-component.png, id=114, 830.35219pt x 330.48468pt>
 File: vue.js-component.png Graphic file (type png)
 <use vue.js-component.png>
-Package pdftex.def Info: vue.js-component.png  used on input line 760.
+Package pdftex.def Info: vue.js-component.png  used on input line 757.
 (pdftex.def)             Requested size: 426.7936pt x 169.86617pt.
 
-Overfull \hbox (14.22862pt too wide) in paragraph at lines 760--762
+Overfull \hbox (14.22862pt too wide) in paragraph at lines 757--759
  [][] 
  []
 
 [26 <./vue.js-api.png> <./vue.js-component.png>]
 Poglavlje 5.
-<competition-add.png, id=119, 1073.51062pt x 669.2503pt>
+<competition-add.png, id=120, 1073.51062pt x 669.2503pt>
 File: competition-add.png Graphic file (type png)
 <use competition-add.png>
-Package pdftex.def Info: competition-add.png  used on input line 786.
+Package pdftex.def Info: competition-add.png  used on input line 783.
 (pdftex.def)             Requested size: 426.79214pt x 266.07169pt.
 
-Overfull \hbox (14.22717pt too wide) in paragraph at lines 786--788
+Overfull \hbox (14.22717pt too wide) in paragraph at lines 783--785
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<competition-details.png, id=120, 714.41907pt x 456.20438pt>
+<competition-details.png, id=121, 714.41907pt x 456.20438pt>
 File: competition-details.png Graphic file (type png)
 <use competition-details.png>
-Package pdftex.def Info: competition-details.png  used on input line 794.
+Package pdftex.def Info: competition-details.png  used on input line 791.
 (pdftex.def)             Requested size: 284.53073pt x 181.6919pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<competition-form.png, id=121, 633.11531pt x 508.14844pt>
+<competition-form.png, id=122, 633.11531pt x 508.14844pt>
 File: competition-form.png Graphic file (type png)
 <use competition-form.png>
-Package pdftex.def Info: competition-form.png  used on input line 805.
+Package pdftex.def Info: competition-form.png  used on input line 802.
 (pdftex.def)             Requested size: 283.59508pt x 227.61792pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -532,68 +532,97 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [27
 
 ]
-<qualified-athletes.png, id=126, 834.11626pt x 600.74437pt>
+<qualified-athletes.png, id=127, 834.11626pt x 600.74437pt>
 File: qualified-athletes.png Graphic file (type png)
 <use qualified-athletes.png>
-Package pdftex.def Info: qualified-athletes.png  used on input line 817.
+Package pdftex.def Info: qualified-athletes.png  used on input line 814.
 (pdftex.def)             Requested size: 395.06386pt x 284.53154pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [28 <./competition-add.png> <./competition-details.png>]
-<swimmers.png, id=132, 359.09157pt x 230.36063pt>
+<swimmers.png, id=133, 359.09157pt x 230.36063pt>
 File: swimmers.png Graphic file (type png)
 <use swimmers.png>
-Package pdftex.def Info: swimmers.png  used on input line 829.
+Package pdftex.def Info: swimmers.png  used on input line 826.
 (pdftex.def)             Requested size: 227.6261pt x 146.02428pt.
  [29 <./competition-form.png> <./qualified-athletes.png>]
-<swimmers-page.png, id=138, 529.98pt x 356.83313pt>
+<swimmers-page.png, id=139, 529.98pt x 356.83313pt>
 File: swimmers-page.png Graphic file (type png)
 <use swimmers-page.png>
-Package pdftex.def Info: swimmers-page.png  used on input line 837.
+Package pdftex.def Info: swimmers-page.png  used on input line 834.
 (pdftex.def)             Requested size: 341.43416pt x 229.88608pt.
-<pool.png, id=139, 708.39656pt x 691.83469pt>
+<pool.png, id=140, 708.39656pt x 691.83469pt>
 File: pool.png Graphic file (type png)
 <use pool.png>
-Package pdftex.def Info: pool.png  used on input line 848.
+Package pdftex.def Info: pool.png  used on input line 845.
 (pdftex.def)             Requested size: 341.44249pt x 333.45978pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<world-records.png, id=140, 709.90219pt x 664.73344pt>
+<world-records.png, id=141, 709.90219pt x 664.73344pt>
 File: world-records.png Graphic file (type png)
 <use world-records.png>
-Package pdftex.def Info: world-records.png  used on input line 859.
-(pdftex.def)             Requested size: 303.86546pt x 284.53151pt.
+Package pdftex.def Info: world-records.png  used on input line 856.
+(pdftex.def)             Requested size: 426.80034pt x 399.64444pt.
+
+Overfull \hbox (14.23537pt too wide) in paragraph at lines 856--858
+ [][] 
+ []
+
 [30 <./swimmers.png> <./swimmers-page.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [31 <./pool.png>] [32 <./world-records.png>]
 Poglavlje 6.
-(zavrsni.bbl [33
+[33
 
 ]
+Underfull \hbox (badness 2005) in paragraph at lines 905--907
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []\T1/ptm/m/n/12 .  URL $\T1/pcr/m/n/12 https : / / app .
+ []
 
-Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [34
+Underfull \hbox (badness 10000) in paragraph at lines 921--923
+[]|   []   |   []   |   []\T1/ptm/m/n/12 .  URL $\T1/pcr/m/n/12 https : / / www . javatpoint . com /
+ []
 
-] [35] (zavrsni.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 925--927
+[]|   []   |   []   |   []   |   []   |   []\T1/ptm/m/n/12 .  URL $\T1/pcr/m/n/12 https : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 925--927
+\T1/pcr/m/n/12 tutorialspoint . com / mvc _ framework / mvc _ framework _
+ []
+
+[34
+
+] (zavrsni.lof)
+\tf@lof=\write4
+\openout4 = `zavrsni.lof'.
+
+ [35
+
+] [36] [37
+
+] (zavrsni.aux) ) 
 Here is how much of TeX's memory you used:
- 9329 strings out of 476410
- 150452 string characters out of 5784358
- 2063845 words of memory out of 5000000
- 29520 multiletter control sequences out of 15000+600000
+ 9356 strings out of 476410
+ 150923 string characters out of 5784358
+ 2081845 words of memory out of 5000000
+ 29548 multiletter control sequences out of 15000+600000
  579109 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,8n,77p,436b,1850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Ilan Vezmarovic/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on zavrsni.pdf (39 pages, 2393610 bytes).
+Output written on zavrsni.pdf (41 pages, 2368761 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
+ 212 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
